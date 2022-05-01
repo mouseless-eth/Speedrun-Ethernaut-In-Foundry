@@ -9,3 +9,5 @@ Exercise 2 Fallout : Cast
 Exercise 3 CoinFlip : EthersJs
 
 Exercise 4 Telephone : Forge + Cast
+
+Exercise 5 Token : Cast
