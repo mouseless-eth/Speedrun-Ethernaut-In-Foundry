@@ -7,3 +7,6 @@
 [submodule "9_king/lib/forge-std"]
 	path = 9_king/lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
+[submodule "10_reentrancy/lib/forge-std"]
+	path = 10_reentrancy/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
