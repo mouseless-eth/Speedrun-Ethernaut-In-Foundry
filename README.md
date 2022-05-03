@@ -1,4 +1,4 @@
-# Speedrun Ethernauts With Foundry :shipit:
+# Speedrun Ethernaut With Foundry :shipit:
 
 OpenZeppelin's wargame, [Ethernaut](https://ethernaut.openzeppelin.com/) teaches practical smart contract security concepts. This repo contains walkthroughs and solutions to each level using only [Foundry](https://book.getfoundry.sh/index.html) 
 
@@ -8,24 +8,16 @@ OpenZeppelin's wargame, [Ethernaut](https://ethernaut.openzeppelin.com/) teaches
 - **`Cast`** a swiss army knife for interacting with Ethereum RPC nodes
  
 ## How To Use This Repo
-### Installation 
-Install this repo and make sure to have foundry downloaded
-```
-git clone https://github.com/mouseless-eth/Speedrun-Ethernauts-Foundry.git
-cd Speedrun-Ethernauts-Foundry
-```
-
 ### Setup & Config
 We will use environment variables to help us when using `forge` and `cast` 
 ```
-export PRIVATE_KEY=<your-private-key-here>
-```
-```
+export PRIVATE_KEY=<your-private-key-here> 
 export ETH_RPC_URL=<your-rinkerby-node-url-here>
 ```
-> `ETH_RPC_URL` will be automatically checked by forge and cast when they are used
+> `ETH_RPC_URL` will be automatically checked by forge and cast
+> `PRIVATE_KEY` needs to be manually added everytime we use forge or cast
 
-## Level Navigation
+### Level Navigation
 > Links redirect to solution
 
 | Level Name       | Concepts Explored & Difficulty        |
