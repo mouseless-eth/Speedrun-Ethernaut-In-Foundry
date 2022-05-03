@@ -1,9 +1,9 @@
 # Speedrun Ethernauts With Foundry
 
-This repo serves as a walkthrough to the [Ethernaut challenges](https://ethernaut.openzeppelin.com/) using Foundry's tools *Forge* and *Cast*.
+This repo serves as a walkthrough to the [Ethernaut challenges](https://ethernaut.openzeppelin.com/) using Foundry's tools **Forge** and **Cast**.
 
-- *Forge* testing, building, deploying smart contracts
-- *Cast* swiss army knife for interacting with live networks
+- **Forge** testing, building, deploying smart contracts
+- **Cast** swiss army knife for interacting with live networks
 
 ## Level Navigation
 | Level Name       | Difficulty  |
