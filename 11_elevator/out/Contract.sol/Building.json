@@ -1,0 +1,713 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_elevator",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "attack",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_floor",
+          "type": "uint256"
+        }
+      ],
+      "name": "isLastFloor",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x60806040526000805460ff60a01b1916905534801561001d57600080fd5b506040516101cf3803806101cf83398101604081905261003c91610061565b600080546001600160a01b0319166001600160a01b0392909216919091179055610091565b60006020828403121561007357600080fd5b81516001600160a01b038116811461008a57600080fd5b9392505050565b61012f806100a06000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c80635f9a4bca1460375780639e5faafc14607b575b600080fd5b6067604236600460e1565b506000805460ff60a01b198116600160a01b9182900460ff1680159092021790915590565b604051901515815260200160405180910390f35b60816083565b005b600054604051633b669c4d60e21b8152602a60048201526001600160a01b039091169063ed9a713490602401600060405180830381600087803b15801560c857600080fd5b505af115801560db573d6000803e3d6000fd5b50505050565b60006020828403121560f257600080fd5b503591905056fea26469706673582212204a7b841d84922c8959e4bf3807e5fcbdf08b5d43ed591aff50793d8f2c364ee764736f6c634300080d0033",
+    "sourceMap": "65:398:0:-:0;;;130:5;112:23;;-1:-1:-1;;;;112:23:0;;;142:78;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;182:8;:30;;-1:-1:-1;;;;;;182:30:0;-1:-1:-1;;;;;182:30:0;;;;;;;;;;65:398;;14:290:1;84:6;137:2;125:9;116:7;112:23;108:32;105:52;;;153:1;150;143:12;105:52;179:16;;-1:-1:-1;;;;;224:31:1;;214:42;;204:70;;270:1;267;260:12;204:70;293:5;14:290;-1:-1:-1;;;14:290:1:o;:::-;65:398:0;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c80635f9a4bca1460375780639e5faafc14607b575b600080fd5b6067604236600460e1565b506000805460ff60a01b198116600160a01b9182900460ff1680159092021790915590565b604051901515815260200160405180910390f35b60816083565b005b600054604051633b669c4d60e21b8152602a60048201526001600160a01b039091169063ed9a713490602401600060405180830381600087803b15801560c857600080fd5b505af115801560db573d6000803e3d6000fd5b50505050565b60006020828403121560f257600080fd5b503591905056fea26469706673582212204a7b841d84922c8959e4bf3807e5fcbdf08b5d43ed591aff50793d8f2c364ee764736f6c634300080d0033",
+    "sourceMap": "65:398:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;296:165;;;;;;:::i;:::-;-1:-1:-1;348:4:0;382:10;;-1:-1:-1;;;;403:24:0;;-1:-1:-1;;;382:10:0;;;;;;416:11;;403:24;;;;;;;382:10;296:165;;;;364:14:1;;357:22;339:41;;327:2;312:18;296:165:0;;;;;;;226:59;;;:::i;:::-;;;261:8;;:17;;-1:-1:-1;;;261:17:0;;275:2;261:17;;;546:25:1;-1:-1:-1;;;;;261:8:0;;;;:13;;519:18:1;;261:17:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;226:59::o;14:180:1:-;73:6;126:2;114:9;105:7;101:23;97:32;94:52;;;142:1;139;132:12;94:52;-1:-1:-1;165:23:1;;14:180;-1:-1:-1;14:180:1:o",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "/home/admin/Projects/Learning/Ethernauts-Foundry/11_elevator/src/Contract.sol",
+    "id": 56,
+    "exportedSymbols": {
+      "Building": [
+        49
+      ],
+      "Elevator": [
+        55
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:489:0",
+    "nodes": [
+      {
+        "id": 1,
+        "nodeType": "PragmaDirective",
+        "src": "39:24:0",
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 49,
+        "nodeType": "ContractDefinition",
+        "src": "65:398:0",
+        "nodes": [
+          {
+            "id": 4,
+            "nodeType": "VariableDeclaration",
+            "src": "89:17:0",
+            "constant": false,
+            "mutability": "mutable",
+            "name": "elevator",
+            "nameLocation": "98:8:0",
+            "scope": 49,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_Elevator_$55",
+              "typeString": "contract Elevator"
+            },
+            "typeName": {
+              "id": 3,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 2,
+                "name": "Elevator",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 55,
+                "src": "89:8:0"
+              },
+              "referencedDeclaration": 55,
+              "src": "89:8:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Elevator_$55",
+                "typeString": "contract Elevator"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 7,
+            "nodeType": "VariableDeclaration",
+            "src": "112:23:0",
+            "constant": false,
+            "mutability": "mutable",
+            "name": "isTopFloor",
+            "nameLocation": "117:10:0",
+            "scope": 49,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 5,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "112:4:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "value": {
+              "hexValue": "66616c7365",
+              "id": 6,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "bool",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "130:5:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              },
+              "value": "false"
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 19,
+            "nodeType": "FunctionDefinition",
+            "src": "142:78:0",
+            "body": {
+              "id": 18,
+              "nodeType": "Block",
+              "src": "173:47:0",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 16,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 12,
+                      "name": "elevator",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4,
+                      "src": "182:8:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Elevator_$55",
+                        "typeString": "contract Elevator"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "id": 14,
+                          "name": "_elevator",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 9,
+                          "src": "202:9:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 13,
+                        "name": "Elevator",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 55,
+                        "src": "193:8:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_Elevator_$55_$",
+                          "typeString": "type(contract Elevator)"
+                        }
+                      },
+                      "id": 15,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "193:19:0",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Elevator_$55",
+                        "typeString": "contract Elevator"
+                      }
+                    },
+                    "src": "182:30:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Elevator_$55",
+                      "typeString": "contract Elevator"
+                    }
+                  },
+                  "id": 17,
+                  "nodeType": "ExpressionStatement",
+                  "src": "182:30:0"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "parameters": {
+              "id": 10,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9,
+                  "mutability": "mutable",
+                  "name": "_elevator",
+                  "nameLocation": "162:9:0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19,
+                  "src": "154:17:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 8,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "154:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "153:19:0"
+            },
+            "returnParameters": {
+              "id": 11,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "173:0:0"
+            },
+            "scope": 49,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 29,
+            "nodeType": "FunctionDefinition",
+            "src": "226:59:0",
+            "body": {
+              "id": 28,
+              "nodeType": "Block",
+              "src": "251:34:0",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "hexValue": "3432",
+                        "id": 25,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "275:2:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_42_by_1",
+                          "typeString": "int_const 42"
+                        },
+                        "value": "42"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_rational_42_by_1",
+                          "typeString": "int_const 42"
+                        }
+                      ],
+                      "expression": {
+                        "id": 22,
+                        "name": "elevator",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4,
+                        "src": "261:8:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_Elevator_$55",
+                          "typeString": "contract Elevator"
+                        }
+                      },
+                      "id": 24,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "goTo",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 54,
+                      "src": "261:13:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$returns$__$",
+                        "typeString": "function (uint256) external"
+                      }
+                    },
+                    "id": 26,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "261:17:0",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 27,
+                  "nodeType": "ExpressionStatement",
+                  "src": "261:17:0"
+                }
+              ]
+            },
+            "functionSelector": "9e5faafc",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "attack",
+            "nameLocation": "235:6:0",
+            "parameters": {
+              "id": 20,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "241:2:0"
+            },
+            "returnParameters": {
+              "id": 21,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "251:0:0"
+            },
+            "scope": 49,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 48,
+            "nodeType": "FunctionDefinition",
+            "src": "296:165:0",
+            "body": {
+              "id": 47,
+              "nodeType": "Block",
+              "src": "354:107:0",
+              "statements": [
+                {
+                  "assignments": [
+                    37
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 37,
+                      "mutability": "mutable",
+                      "name": "tempSwtich",
+                      "nameLocation": "369:10:0",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 47,
+                      "src": "364:15:0",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "typeName": {
+                        "id": 36,
+                        "name": "bool",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "364:4:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 39,
+                  "initialValue": {
+                    "id": 38,
+                    "name": "isTopFloor",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 7,
+                    "src": "382:10:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "364:28:0"
+                },
+                {
+                  "expression": {
+                    "id": 43,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 40,
+                      "name": "isTopFloor",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 7,
+                      "src": "403:10:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 42,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "UnaryOperation",
+                      "operator": "!",
+                      "prefix": true,
+                      "src": "416:11:0",
+                      "subExpression": {
+                        "id": 41,
+                        "name": "isTopFloor",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 7,
+                        "src": "417:10:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "src": "403:24:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 44,
+                  "nodeType": "ExpressionStatement",
+                  "src": "403:24:0"
+                },
+                {
+                  "expression": {
+                    "id": 45,
+                    "name": "tempSwtich",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 37,
+                    "src": "444:10:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 35,
+                  "id": 46,
+                  "nodeType": "Return",
+                  "src": "437:17:0"
+                }
+              ]
+            },
+            "functionSelector": "5f9a4bca",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isLastFloor",
+            "nameLocation": "305:11:0",
+            "parameters": {
+              "id": 32,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 31,
+                  "mutability": "mutable",
+                  "name": "_floor",
+                  "nameLocation": "322:6:0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48,
+                  "src": "317:11:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 30,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "317:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "316:13:0"
+            },
+            "returnParameters": {
+              "id": 35,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 34,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48,
+                  "src": "348:4:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 33,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "348:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "347:6:0"
+            },
+            "scope": 49,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Building",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          49
+        ],
+        "name": "Building",
+        "nameLocation": "74:8:0",
+        "scope": 56,
+        "usedErrors": []
+      },
+      {
+        "id": 55,
+        "nodeType": "ContractDefinition",
+        "src": "465:62:0",
+        "nodes": [
+          {
+            "id": 54,
+            "nodeType": "FunctionDefinition",
+            "src": "490:35:0",
+            "functionSelector": "ed9a7134",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "goTo",
+            "nameLocation": "499:4:0",
+            "parameters": {
+              "id": 52,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 51,
+                  "mutability": "mutable",
+                  "name": "_foor",
+                  "nameLocation": "509:5:0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 54,
+                  "src": "504:10:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 50,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "504:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "503:12:0"
+            },
+            "returnParameters": {
+              "id": 53,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "524:0:0"
+            },
+            "scope": 55,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Elevator",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          55
+        ],
+        "name": "Elevator",
+        "nameLocation": "475:8:0",
+        "scope": 56,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  }
+}
