@@ -10,3 +10,6 @@
 [submodule "10_reentrancy/lib/forge-std"]
 	path = 10_reentrancy/lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
+[submodule "11_elevator/lib/forge-std"]
+	path = 11_elevator/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
