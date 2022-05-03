@@ -9,9 +9,9 @@ OpenZeppelin's wargame, [Ethernaut](https://ethernaut.openzeppelin.com/) teaches
  
 ## How To Use This Repo
 ### Config & Setup
-This project uses environment variables to handle all config variables, which include:
-- `ETH_RPC_URL` **automatically** checked by forge and cast
-- `PRIVATE_KEY` **manually** added when using forge or cast
+This project uses [environment variables](https://www.geeksforgeeks.org/environment-variables-in-linux-unix/) to handle all config variables:
+- `ETH_RPC_URL` this is **automatically** checked by forge and cast
+- `PRIVATE_KEY` this has to be **manually** added when using forge or cast
 - `LEVEL_ADDRESS` instance address
 
 environment variables can be set in the terminal by running
