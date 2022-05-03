@@ -1,6 +1,6 @@
 # Speedrun Ethernaut With Foundry :shipit:
 
-OpenZeppelin's wargame, [Ethernaut](https://ethernaut.openzeppelin.com/) teaches practical smart contract security concepts through CTF like challenges. This repo contains walkthroughs and solutions to each level using only [Foundry](https://book.getfoundry.sh/index.html).
+OpenZeppelin's wargame, [Ethernaut](https://ethernaut.openzeppelin.com/) teaches practical smart contract security concepts through CTF like challenges. This repo contains walkthroughs and solutions to each level using only the [Foundry](https://book.getfoundry.sh/index.html) toolchain.
 
 #### Foundry's toolchain consists of :
 - **`Forge`** a cli tool for testing, building, and deploying smart contracts
