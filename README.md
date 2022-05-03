@@ -9,14 +9,14 @@ OpenZeppelin's wargame, [Ethernaut](https://ethernaut.openzeppelin.com/) teaches
  
 ## How To Use This Repo
 ### Setup & Config
-We will use environment variables to help us when using `forge` and `cast` 
+Set up the following environment variables for when we use **forge** and **cast** 
 ```
 export PRIVATE_KEY=<your-private-key-here> 
 export ETH_RPC_URL=<your-rinkerby-node-url-here>
 ```
 > `ETH_RPC_URL` will be automatically checked by forge and cast
 
-> `PRIVATE_KEY` needs to be manually added everytime we use forge or cast
+> `PRIVATE_KEY` needs to be manually added when using forge or cast
 
 ### Level Solution Navigation
 
