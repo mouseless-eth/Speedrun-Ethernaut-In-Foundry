@@ -1,10 +1,10 @@
 # Speedrun Ethernauts With Foundry
 
-Walkthrough to each [Ethernaut](https://ethernaut.openzeppelin.com/) level using only [Foundry](https://book.getfoundry.sh/index.html)
+Codebase consisting of walkthroughs and detailed explanations for each [Ethernauts](https://ethernaut.openzeppelin.com/) level using only [Foundry](https://book.getfoundry.sh/index.html)
 
-#### We will be making use of the following tools
-- `Forge` cli tool for testing, building, deploying smart contracts
-- `Cast` swiss army knife for interacting with Ethereum RPC nodes
+#### Foundry's toolchain consists of :
+`Forge` cli tool for testing, building, deploying smart contracts
+`Cast` swiss army knife for interacting with Ethereum RPC nodes
 
 ## Level Navigation
 | Level Name       | Difficulty  |
