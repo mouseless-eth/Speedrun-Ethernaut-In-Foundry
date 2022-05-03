@@ -1,14 +1,15 @@
 # Speedrun Ethernaut With Foundry :shipit:
 
-OpenZeppelin's wargame, [Ethernaut](https://ethernaut.openzeppelin.com/) teaches practical smart contract security concepts through CTF like challenges. This repo contains walkthroughs and solutions to each level using only [Foundry](https://book.getfoundry.sh/index.html) 
+OpenZeppelin's wargame, [Ethernaut](https://ethernaut.openzeppelin.com/) teaches practical smart contract security concepts through CTF like challenges. This repo contains walkthroughs and solutions to each level using only [Foundry](https://book.getfoundry.sh/index.html).
+
 #### Foundry's toolchain consists of :
 - **`Forge`** a cli tool for testing, building, and deploying smart contracts
  
 - **`Cast`** a swiss army knife for interacting with Ethereum RPC nodes
  
 ## How To Use This Repo
-### Setup & Config
-Set up the following environment variables
+### Config & Setup
+Set the following environment variables
 - `ETH_RPC_URL` **automatically** checked by forge and cast
 - `PRIVATE_KEY` **manually** added when using forge or cast
 - `LEVEL_ADDRESS` instance address
@@ -17,6 +18,7 @@ environment variables can be set in the terminal
 ```
 export PRIVATE_KEY=<your-private-key-here> 
 export ETH_RPC_URL=<your-rinkerby-node-url-here>
+export LEVEL_ADDRESS=<your-instance-address-here>
 ```
 
 ### Level Solution Navigation
