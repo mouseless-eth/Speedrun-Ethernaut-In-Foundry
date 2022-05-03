@@ -1,10 +1,10 @@
 # Speedrun Ethernauts With Foundry
 
-Codebase consisting of walkthroughs and detailed explanations for each [Ethernauts](https://ethernaut.openzeppelin.com/) level using only [Foundry](https://book.getfoundry.sh/index.html)
+Codebase containing walkthroughs and detailed explanations for each [Ethernauts](https://ethernaut.openzeppelin.com/) level using only [Foundry](https://book.getfoundry.sh/index.html) 
 
 #### Foundry's toolchain consists of :
-`Forge` cli tool for testing, building, deploying smart contracts
-`Cast` swiss army knife for interacting with Ethereum RPC nodes
+-`**Forge**` a cli tool for testing, building, deploying smart contracts
+-`**Cast**` a swiss army knife for interacting with Ethereum RPC nodes
 
 ## Level Navigation
 | Level Name       | Difficulty  |
@@ -35,3 +35,4 @@ Codebase consisting of walkthroughs and detailed explanations for each [Ethernau
 | Puzzle Wallet    | 7/10        |
 | Motorbike        | 6/10        |
 | DoubleEntryPoint | 4/10        |
+> Level name redirects to it's corresponding directory
