@@ -14,7 +14,7 @@ This project uses [environment variables](https://www.geeksforgeeks.org/environm
 - `PRIVATE_KEY` this has to be **manually** added when using forge or cast
 - `LEVEL_ADDRESS` instance address
 
-environment variables can be set in the terminal by running
+Environment variables can be set in the terminal by running
 ```
 export PRIVATE_KEY=<your-private-key-here> 
 export ETH_RPC_URL=<your-rinkerby-node-url-here>
