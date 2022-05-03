@@ -1,0 +1,612 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes8",
+          "name": "_gateKey",
+          "type": "bytes8"
+        }
+      ],
+      "name": "enter",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "/home/admin/Projects/Learning/Ethernauts-Foundry/13_gateKeeperOne/src/Contract.sol",
+    "id": 20396,
+    "exportedSymbols": {
+      "Attack": [
+        20387
+      ],
+      "GateKeeperOne": [
+        20395
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:511:5",
+    "nodes": [
+      {
+        "id": 20351,
+        "nodeType": "PragmaDirective",
+        "src": "39:24:5",
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 20387,
+        "nodeType": "ContractDefinition",
+        "src": "65:394:5",
+        "nodes": [
+          {
+            "id": 20354,
+            "nodeType": "VariableDeclaration",
+            "src": "87:24:5",
+            "constant": false,
+            "mutability": "mutable",
+            "name": "gateKeeper",
+            "nameLocation": "101:10:5",
+            "scope": 20387,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_GateKeeperOne_$20395",
+              "typeString": "contract GateKeeperOne"
+            },
+            "typeName": {
+              "id": 20353,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 20352,
+                "name": "GateKeeperOne",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 20395,
+                "src": "87:13:5"
+              },
+              "referencedDeclaration": 20395,
+              "src": "87:13:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_GateKeeperOne_$20395",
+                "typeString": "contract GateKeeperOne"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 20366,
+            "nodeType": "FunctionDefinition",
+            "src": "118:89:5",
+            "body": {
+              "id": 20365,
+              "nodeType": "Block",
+              "src": "151:56:5",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 20363,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 20359,
+                      "name": "gateKeeper",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 20354,
+                      "src": "161:10:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_GateKeeperOne_$20395",
+                        "typeString": "contract GateKeeperOne"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "id": 20361,
+                          "name": "_gateKeeper",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 20356,
+                          "src": "188:11:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 20360,
+                        "name": "GateKeeperOne",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 20395,
+                        "src": "174:13:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_GateKeeperOne_$20395_$",
+                          "typeString": "type(contract GateKeeperOne)"
+                        }
+                      },
+                      "id": 20362,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "174:26:5",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_GateKeeperOne_$20395",
+                        "typeString": "contract GateKeeperOne"
+                      }
+                    },
+                    "src": "161:39:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_GateKeeperOne_$20395",
+                      "typeString": "contract GateKeeperOne"
+                    }
+                  },
+                  "id": 20364,
+                  "nodeType": "ExpressionStatement",
+                  "src": "161:39:5"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "parameters": {
+              "id": 20357,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20356,
+                  "mutability": "mutable",
+                  "name": "_gateKeeper",
+                  "nameLocation": "138:11:5",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20366,
+                  "src": "130:19:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 20355,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "130:7:5",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "129:21:5"
+            },
+            "returnParameters": {
+              "id": 20358,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "151:0:5"
+            },
+            "scope": 20387,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 20386,
+            "nodeType": "FunctionDefinition",
+            "src": "324:133:5",
+            "body": {
+              "id": 20385,
+              "nodeType": "Block",
+              "src": "359:98:5",
+              "statements": [
+                {
+                  "assignments": [
+                    20372
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 20372,
+                      "mutability": "mutable",
+                      "name": "key",
+                      "nameLocation": "376:3:5",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 20385,
+                      "src": "369:10:5",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes8",
+                        "typeString": "bytes8"
+                      },
+                      "typeName": {
+                        "id": 20371,
+                        "name": "bytes8",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "369:6:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes8",
+                          "typeString": "bytes8"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 20376,
+                  "initialValue": {
+                    "commonType": {
+                      "typeIdentifier": "t_bytes8",
+                      "typeString": "bytes8"
+                    },
+                    "id": 20375,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "id": 20373,
+                      "name": "addr",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 20368,
+                      "src": "382:4:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes8",
+                        "typeString": "bytes8"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "&",
+                    "rightExpression": {
+                      "hexValue": "307846464646464646463030303046464646",
+                      "id": 20374,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "389:18:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_18446744069414649855_by_1",
+                        "typeString": "int_const 18446744069414649855"
+                      },
+                      "value": "0xFFFFFFFF0000FFFF"
+                    },
+                    "src": "382:25:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes8",
+                      "typeString": "bytes8"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "369:38:5"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 20382,
+                        "name": "key",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 20372,
+                        "src": "446:3:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes8",
+                          "typeString": "bytes8"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes8",
+                          "typeString": "bytes8"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_bytes8",
+                            "typeString": "bytes8"
+                          }
+                        ],
+                        "expression": {
+                          "id": 20377,
+                          "name": "gateKeeper",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 20354,
+                          "src": "417:10:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_GateKeeperOne_$20395",
+                            "typeString": "contract GateKeeperOne"
+                          }
+                        },
+                        "id": 20379,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "enter",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 20394,
+                        "src": "417:16:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_external_nonpayable$_t_bytes8_$returns$_t_bool_$",
+                          "typeString": "function (bytes8) external returns (bool)"
+                        }
+                      },
+                      "id": 20381,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "names": [
+                        "gas"
+                      ],
+                      "nodeType": "FunctionCallOptions",
+                      "options": [
+                        {
+                          "hexValue": "3635303834",
+                          "id": 20380,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "439:5:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_65084_by_1",
+                            "typeString": "int_const 65084"
+                          },
+                          "value": "65084"
+                        }
+                      ],
+                      "src": "417:28:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_bytes8_$returns$_t_bool_$gas",
+                        "typeString": "function (bytes8) external returns (bool)"
+                      }
+                    },
+                    "id": 20383,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "417:33:5",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 20384,
+                  "nodeType": "ExpressionStatement",
+                  "src": "417:33:5"
+                }
+              ]
+            },
+            "functionSelector": "3370204e",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "enter",
+            "nameLocation": "333:5:5",
+            "parameters": {
+              "id": 20369,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20368,
+                  "mutability": "mutable",
+                  "name": "addr",
+                  "nameLocation": "346:4:5",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20386,
+                  "src": "339:11:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes8",
+                    "typeString": "bytes8"
+                  },
+                  "typeName": {
+                    "id": 20367,
+                    "name": "bytes8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "339:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes8",
+                      "typeString": "bytes8"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "338:13:5"
+            },
+            "returnParameters": {
+              "id": 20370,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "359:0:5"
+            },
+            "scope": 20387,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Attack",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          20387
+        ],
+        "name": "Attack",
+        "nameLocation": "74:6:5",
+        "scope": 20396,
+        "usedErrors": []
+      },
+      {
+        "id": 20395,
+        "nodeType": "ContractDefinition",
+        "src": "461:88:5",
+        "nodes": [
+          {
+            "id": 20394,
+            "nodeType": "FunctionDefinition",
+            "src": "491:56:5",
+            "functionSelector": "3370204e",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "enter",
+            "nameLocation": "500:5:5",
+            "parameters": {
+              "id": 20390,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20389,
+                  "mutability": "mutable",
+                  "name": "_gateKey",
+                  "nameLocation": "513:8:5",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20394,
+                  "src": "506:15:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes8",
+                    "typeString": "bytes8"
+                  },
+                  "typeName": {
+                    "id": 20388,
+                    "name": "bytes8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "506:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes8",
+                      "typeString": "bytes8"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "505:17:5"
+            },
+            "returnParameters": {
+              "id": 20393,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20392,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20394,
+                  "src": "541:4:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 20391,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "541:4:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "540:6:5"
+            },
+            "scope": 20395,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "GateKeeperOne",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          20395
+        ],
+        "name": "GateKeeperOne",
+        "nameLocation": "471:13:5",
+        "scope": 20396,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  }
+}
