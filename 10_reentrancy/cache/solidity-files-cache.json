@@ -209,8 +209,8 @@
       }
     },
     "/home/admin/Projects/Learning/Ethernauts/10_reentrancy/src/Contract.sol": {
-      "lastModificationDate": 1651524601506,
-      "contentHash": "d0d3a91e1ab50f030818346dcb007887",
+      "lastModificationDate": 1651568913664,
+      "contentHash": "50ef23c6530e4594686f9bc2c2130abf",
       "sourceName": "src/Contract.sol",
       "solcConfig": {
         "settings": {
@@ -249,8 +249,8 @@
       }
     },
     "/home/admin/Projects/Learning/Ethernauts/10_reentrancy/test/Contract.t.sol": {
-      "lastModificationDate": 1651522299873,
-      "contentHash": "848ba83feec29a2e4d286c118102ae20",
+      "lastModificationDate": 1651526545753,
+      "contentHash": "a9c30e20d0dd412c122e47dbabe1a0af",
       "sourceName": "test/Contract.t.sol",
       "solcConfig": {
         "settings": {
@@ -282,7 +282,8 @@
         "lib/forge-std/src/Test.sol",
         "lib/forge-std/src/Vm.sol",
         "lib/forge-std/src/console.sol",
-        "lib/forge-std/src/console2.sol"
+        "lib/forge-std/src/console2.sol",
+        "src/Contract.sol"
       ],
       "versionRequirement": "^0.8.13",
       "artifacts": {
