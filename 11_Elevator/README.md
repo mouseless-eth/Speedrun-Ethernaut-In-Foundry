@@ -96,3 +96,5 @@ output
 - `default`: [no modifier] promises functions that will read and modify the the state
 
 You can use the **view function modifier** on an interface in order to prevent state modifications. The **pure function modifier** also prevents functions from modifying the state. 
+
+Read more about state modifiers [here](http://solidity.readthedocs.io/en/develop/contracts.html#view-functions)
