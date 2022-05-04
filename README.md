@@ -34,7 +34,7 @@ export LEVEL_ADDRESS=<your-instance-address-here>
 | Token            | Overflow and underflows attacks              | 3/10       |
 | Delegation       | DelegateCall                                 | 4/10       |
 | Force            | SelfDestruct function                        | 5/10       |
-| Vault            | Inspecting variables with a private modifier | 3/10       |
+| Vault            | Inspecting contract storage slots            | 3/10       |
 | King             |                                              | 6/10       |
 | Re-entrancy      |                                              | 6/10       |
 | Elevator         |                                              | 4/10       |
