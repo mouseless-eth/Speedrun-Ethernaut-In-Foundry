@@ -87,7 +87,7 @@ cast send $DEPLOYED_ADDRESS "attack()" --value 0.01ether --gas 200000 --private-
 > Replace $DEPLOYED_ADDRESS with the address of your deployed contract
 
 ## Further Reading
-[Video showing example of Re-entrancy attack](https://www.youtube.com/watch?v=4Mm3BCyHtDY&t=321s)
+[Video](https://www.youtube.com/watch?v=4Mm3BCyHtDY&t=321s) showing example of Re-entrancy attack 
 
 To prevent re-entrancy attacks, use the [Check-Effects-Interactions pattern](https://docs.soliditylang.org/en/develop/security-considerations.html#use-the-checks-effects-interactions-pattern) or use OpenZepplin's [Reentrancy Guard Contract](https://docs.openzeppelin.com/contracts/2.x/api/utils#ReentrancyGuard)
 
