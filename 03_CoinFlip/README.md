@@ -96,7 +96,6 @@ const coinFlipContract = new ethers.Contract(
 
 let correctFlips = 0;
 
-// everytime there is a new block lets get it's number
 provider.on('block', async (blockNum) => {
   console.log("blockNum : ", blockNum);
   let blockData = await provider.getBlock(blockNum);
@@ -112,10 +111,9 @@ provider.on('block', async (blockNum) => {
   correctFlips++;
   console.log(correctFlips);
 })
-
 ```
 
 5. run the script that we just created
-```
+```console
 node src/coinFlip.js
 ```
