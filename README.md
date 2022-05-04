@@ -36,7 +36,7 @@ export LEVEL_ADDRESS=<your-instance-address-here>
 | Force            | SelfDestruct function                        | 5/10       |
 | Vault            | Inspecting contract storage slots            | 3/10       |
 | King             | Spoofing contract that expects EOA           | 6/10       |
-| Re-entrancy      |                                              | 6/10       |
+| Re-entrancy      | Re-entrancy attacks                          | 6/10       |
 | Elevator         |                                              | 4/10       |
 | Privacy          |                                              | 8/10       |
 | Gatekeeper One   |                                              | 5/10       |
