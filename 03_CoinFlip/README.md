@@ -50,7 +50,7 @@ Because the flip is calculated onchain using the previous blockhash, we can pred
 
 ### Walkthrough
 
-1. create a new [forge project](https://book.getfoundry.sh/projects/creating-a-new-project.html) with the following contract in the `src` directory
+1. create a new [forge project](https://book.getfoundry.sh/projects/creating-a-new-project.html) with the following contract in `src` 
 ```solidity
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
@@ -88,7 +88,7 @@ forge create src/Contract.sol:FortuneTeller --constructor-args $LEVEL_ADDRESS --
 ```console
 touch flip.sh
 ```
-contents off `flip.sh`
+add the following bash script to `flip.sh`
 ```bash
 #!/bin/bash
 for i in {1..10}
@@ -105,3 +105,6 @@ done
 chmod 777 flip.sh
 ./flip.sh
 ```
+
+## Further Reading
+How to avoid generating numbers onchain by using [Chainlink VRF](https://docs.chain.link/docs/get-a-random-number)
