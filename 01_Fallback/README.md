@@ -1,6 +1,4 @@
-# 1. Fallback 
-
-## Problem Outline
+## 1. Fallback Problem Outline
 
 **Difficulty : 1/10**
 
