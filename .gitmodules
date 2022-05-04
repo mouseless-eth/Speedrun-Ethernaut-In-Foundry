@@ -16,3 +16,6 @@
 [submodule "13_gateKeeperOne/lib/forge-std"]
 	path = 13_gateKeeperOne/lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
+[submodule "03_CoinFlip/lib/forge-std"]
+	path = 03_CoinFlip/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
