@@ -84,7 +84,7 @@ output
 ```
 0x0000000000000000000000000000000000000000000000000000000000000001
 ```
-> it has changed form false to true
+> variable top has changed form false to true
 
 ## Extra Resources
 `public` and `private` are **visibility modifiers**
