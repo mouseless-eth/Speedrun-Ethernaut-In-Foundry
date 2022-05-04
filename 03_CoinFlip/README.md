@@ -48,7 +48,9 @@ contract CoinFlip {
 ## Solution
 Because the flip is calculated onchain using the previous blockhash, we can predict what the outcome will be by simulating the coinflip offchain and then submitting the right predition.
 
-This level does not use foundry as it will be solved using a simple [ethersjs](https://docs.ethers.io/v5/) script. **Feel free to contribute if you have a solution using only foundry
+This level does not use foundry as it will be solved using a simple [ethersjs](https://docs.ethers.io/v5/) script. 
+
+>Feel free to contribute if you have a solution using only foundry (most likely using forge to make a contract to calculate the flip + call level instance)
 
 ### Walkthrough
 
