@@ -35,7 +35,7 @@ export LEVEL_ADDRESS=<your-instance-address-here>
 | Delegation       | DelegateCall                                 | 4/10       |
 | Force            | SelfDestruct function                        | 5/10       |
 | Vault            | Inspecting contract storage slots            | 3/10       |
-| King             |                                              | 6/10       |
+| King             | Spoofing contract that expects EOA           | 6/10       |
 | Re-entrancy      |                                              | 6/10       |
 | Elevator         |                                              | 4/10       |
 | Privacy          |                                              | 8/10       |
