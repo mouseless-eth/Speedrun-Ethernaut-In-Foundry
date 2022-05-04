@@ -52,7 +52,7 @@ We can **spoof** the delegate call by sending a transation that contains the fun
 ```console
 cast calldata "pwn()"
 ```
-output : 
+output
 ```console
 0xdd365b8b
 ```
