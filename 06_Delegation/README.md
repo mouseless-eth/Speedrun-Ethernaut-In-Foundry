@@ -56,7 +56,7 @@ output
 ```console
 0xdd365b8b
 ```
-2. making a call to the fallback function with the methodId in `msg.data`
+2. making a call to the fallback function where `msg.data` equals the calcualted methodId
 ```console
 cast send $LEVEL_ADDRESS 0xdd365b8b --gas 50000 --private-key $PRIVATE_KEY 
 ```
@@ -64,5 +64,6 @@ cast send $LEVEL_ADDRESS 0xdd365b8b --gas 50000 --private-key $PRIVATE_KEY
 
 ## Further Reading
 [video on Delegatecall](https://www.youtube.com/watch?v=uawCDnxFJ-0&t=208s)
+
 [More info about methodId](https://docs.soliditylang.org/en/v0.8.13/abi-spec.html)
 
