@@ -60,7 +60,7 @@ To become the contract owner, we first need to contribute some ETH and then call
 
 ### Walkthrough
 1. Contributing some eth using the "contribute()" function
-```
+```console
 cast send $LEVEL_ADDRESS "contribute()" --value 0.0001ether --private-key=$PRIVATE_KEY
 ```
 
