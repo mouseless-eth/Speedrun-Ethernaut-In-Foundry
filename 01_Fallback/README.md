@@ -1,4 +1,4 @@
-## 1. Fallback Problem Outline
+## Fallback Level Outline
 
 **Difficulty : 1/10**
 
