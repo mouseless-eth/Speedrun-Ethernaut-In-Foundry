@@ -1,6 +1,7 @@
 ## Fallback Level Outline
 
 [Link to level on Ethernaut](https://ethernaut.openzeppelin.com/level/0x9CB391dbcD447E645D6Cb55dE6ca23164130D008)
+
 **Difficulty : 1/10**
 
 You will beat this level if:
