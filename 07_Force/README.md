@@ -24,6 +24,7 @@ contract Force {/*
 [Link to level on Ethernaut](https://ethernaut.openzeppelin.com/level/0x22699e6AdD7159C3C385bf4d7e1C647ddB3a99ea)
 
 ## Solution
+We can call the selfdestruct function (which takes an address as a parameter) to force send all remaining ether in this contract to the level address.
 
 ### Walkthrough
 
