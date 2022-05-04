@@ -27,8 +27,8 @@ export LEVEL_ADDRESS=<your-instance-address-here>
 
 | Level Name       | Concepts Explored            | Difficulty |
 | -----------      | -----------                  | ----       |
-| Fallback         | fallback & receive functions | (1/10)     |
-| Fallout          | misnaming functions          | (2/10)     |
+| Fallback         | fallback & receive functions | 1/10     |
+| Fallout          | misnaming functions          | 2/10     |
 | Coin Flip        | 3/10                         |            |
 | Telephone        | 1/10                         |            |
 | Token            | 3/10                         |            |
