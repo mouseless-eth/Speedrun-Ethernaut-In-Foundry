@@ -1,6 +1,5 @@
 ## Fallback Level Outline
 
-
 **Difficulty : 1/10**
 
 You will beat this level if:
