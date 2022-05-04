@@ -63,7 +63,7 @@ cast send $LEVEL_ADDRESS 0xdd365b8b --gas 50000 --private-key $PRIVATE_KEY
 > we need to set a custom gas limit for this transaction as the default amount insufficient
 
 ## Further Reading
-[video on Delegatecall](https://www.youtube.com/watch?v=uawCDnxFJ-0&t=208s)
+[Video on Delegatecall](https://www.youtube.com/watch?v=uawCDnxFJ-0&t=208s)
 
 [More info about methodId](https://docs.soliditylang.org/en/v0.8.13/abi-spec.html)
 
