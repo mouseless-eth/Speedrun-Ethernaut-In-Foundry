@@ -31,8 +31,8 @@ export LEVEL_ADDRESS=<your-instance-address-here>
 | Fallout          | Misnaming functions                         | 2/10       |
 | Coin Flip        | Predicting onchain randomness               | 3/10       |
 | Telephone        | Msg.sender vs tx.origin                     | 1/10       |
-| Token            | Overflow and underflows attacks |            3/10        |
-| Delegation       | 4/10                                        |            |
+| Token            | Overflow and underflows attacks             | 3/10       |
+| Delegation       | DelegateCall                                | 4/10       |
 | Force            | 5/10                                        |            |
 | Vault            | 3/10                                        |            |
 | King             | 6/10                                        |            |
