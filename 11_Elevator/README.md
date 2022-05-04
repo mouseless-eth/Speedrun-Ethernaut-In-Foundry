@@ -94,3 +94,5 @@ output
 - `pure`: promises functions that will neither read from nor modify the state. Note: Pure replaces constant in more recent compilers.
 - `view`: promises functions that will only read, but not modify the state
 - `default`: [no modifier] promises functions that will read and modify the the state
+
+You can use the **view function modifier** on an interface in order to prevent state modifications. The **pure function modifier** also prevents functions from modifying the state. 
