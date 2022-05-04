@@ -30,7 +30,7 @@ export LEVEL_ADDRESS=<your-instance-address-here>
 | Fallback         | Fallback & receive functions                | 1/10       |
 | Fallout          | Misnaming functions                         | 2/10       |
 | Coin Flip        | Predicting onchain randomness               | 3/10       |
-| Telephone        | Difference between msg.sender & tx.origin   | 1/10       |
+| Telephone        | Msg.sender vs tx.origin                     | 1/10       |
 | Token            | 3/10                                        |            |
 | Delegation       | 4/10                                        |            |
 | Force            | 5/10                                        |            |
