@@ -106,9 +106,9 @@ uint16 private awkwardness = uint16(now);
 
 remember that the evm uses little endian order when handling byte ordering so we read the memory slot from right to left
 
-    - the byte `0a` is the uint8 variable **flattening**. We can confirm this as `a` is `10` in decimal
-    - the byte `ff` is the uint8 variable **denomination**. We can confirm this as `ff` is `255` in decimal
-    - the 2 bytes `be09` is the uint16 variable **akwardness**. The value represents the 16bit mask of the `block.timestamp`
+- the byte `0a` is the uint8 variable **flattening**. We can confirm this as `a` is `10` in decimal
+- the byte `ff` is the uint8 variable **denomination**. We can confirm this as `ff` is `255` in decimal
+- the 2 bytes `be09` is the uint16 variable **akwardness**. The value represents the 16bit mask of the `block.timestamp`
 
 ##### 4. inspecting storage slot 3
 ```console
