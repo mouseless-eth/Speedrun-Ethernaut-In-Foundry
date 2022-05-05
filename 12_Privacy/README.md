@@ -56,7 +56,7 @@ Read more about layout of state variables in Storage from the docs [here](https:
 
 *Let's inspect each memory slot individually and make sense of what is going on
 
-1. inspecting **storage slot 0**
+##### 1. inspecting **storage slot 0**
 ```console
 cast storage $LEVEL_ADDRESS 0
 ```
@@ -72,7 +72,7 @@ bool public locked = true;
 ```
 boolean types require 1 byte of storage, but because the next variable in our contract `ID` is of type `uint256`, it takes up 32 bytes to store (a full storage slot) meaning it cannot be packed with `locked` so it stored in the next storage slot. 
 
-####2. inspecting storage slot 1
+###### 2. inspecting storage slot 1
 ```console
 cast storage $LEVEL_ADDRESS 1
 ```
@@ -89,7 +89,7 @@ uint256 public ID = block.timestamp;
 
 as mentioned before, `ID` takes up the whole storage slot as it is a `uint256` which requires 32 bytes (evm word size)
 
-3. inspecting storage slot 2
+#### 3. inspecting storage slot 2
 ```console
 cast storage $LEVEL_ADDRESS 2
 ```
