@@ -72,7 +72,7 @@ bool public locked = true;
 ```
 boolean types require 1 byte of storage, but because the next variable in our contract `ID` is of type `uint256`, it takes up 32 bytes to store (a full storage slot) meaning it cannot be packed with `locked` so it stored in the next storage slot. 
 
-#####2. inspecting storage slot 1
+####2. inspecting storage slot 1
 ```console
 cast storage $LEVEL_ADDRESS 1
 ```
