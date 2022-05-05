@@ -41,7 +41,7 @@ export LEVEL_ADDRESS=<your-instance-address-here>
 | Privacy          | Layout of state variables in storage         | 8/10       |
 | Gatekeeper One   |                                              | 5/10       |
 | Gatekeeper Two   |                                              | 6/10       |
-| Naught Coin      | ERC20's approve and transferFrom functions   | 5/10       |
+| Naught Coin      | Inheritance and transferFrom function        | 5/10       |
 | Preservation     |                                              | 8/10       |
 | Recovery         |                                              | 6/10       |
 | Magic Number     |                                              | 6/10       |

@@ -56,7 +56,7 @@ The contract inherits from [OpenZeppelin's ERC20 contract](https://github.com/Op
 
 ERC20.sol is an implementation of the IERC20 interface (ERC20 standard). The IERC20 interface has two transfer methods, `transfer(address to, uint256 amount) public returns (bool)` and `transferFrom(address from, address to, uint256 amount) public returns (bool)`. The level contract overrides the first transfer method but we can call the second transfer method which is inherited from OpenZeppelings ERC20.sol contract and untampered with.
 
-The purpose of `transferFrom` is for other addresses (mainly smart contracts) to move your tokens on your behalf. To allow an address to move any sum of tokens, we first need to give it permission by calling the `approve(address,uint256)` function which takes in the address that we allow to spend our tokens as well as the maximum number of tokens that the address can move. 
+The purpose of `transferFrom` is for other addresses (mainly smart contracts) to move tokens out of your address on your behalf. To allow an address to move any sum of tokens, we first need to give it permission by calling the `approve(address,uint256)` function which takes in the address that we allow to spend our tokens as well as the maximum number of tokens that the address can move. 
 
 The `transferFrom` function seems unsafe at first but it is crucial for tasks such as making a swap on a defi protocol, selling your NFT without sending it to an escrow contract, 
 > NFTs are not ERC20 but they have the same transferFrom and approve functions
@@ -70,25 +70,5 @@ cast send $LEVEL_ADDRESS "approve(address,uint256)" 0x527B0642b3902C3Bc29ae13D82
 
 2. Calling contract's "transferFrom(address from, address to, uint256 amount)" function to transfer all tokens to a burn address
 ```console
-cast send $LEVEL_ADDRESS "contribute()" --value 0.0001ether --private-key=$PRIVATE_KEY
+cast send $LEVEL_ADDRESS "transferFrom(address,address,uint256)" 0x527B0642b3902C3Bc29ae13D8208b86dA007aa26 0x000000000000000000000000000000000000dEaD 1000000000000000000000000 --private-key $PRIVATE_KEY
 ```
-
-```
-## Further Reading
-
-```
-    Ether is sent to contract?
-                |
-        is msg.data empty?
-                / \
-               /   \
-             yes    no  
-             /       \    
-        receive()    fallback()
-         exist?                      
-        /     \
-       yes     no          
-      /         \
-  receive()     fallback()
-```
-
