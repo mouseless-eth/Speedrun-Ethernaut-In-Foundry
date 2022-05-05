@@ -34,7 +34,7 @@ contract Privacy {
 
 ## Solution
 
-To solve this level, we an understanding of how contract storage slots work and how they are assigned
+To solve this level, we need an understanding of how contract storage slots work and how they are assigned.
 
 - The wordsize of the EVM is equal to 256 bits (32 bytes)
     - This means that each storage slot has a capacity of 32 bytes
