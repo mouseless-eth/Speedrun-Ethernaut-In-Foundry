@@ -1,4 +1,4 @@
-## Fallback Level Outline
+## Delegation Level Outline
 
 **Difficulty : 4/10**
 

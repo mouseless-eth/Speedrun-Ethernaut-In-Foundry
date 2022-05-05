@@ -1,4 +1,4 @@
-## Fallback Level Outline
+## Elevator Level Outline
 
 **Difficulty : 4/10**
 

@@ -1,4 +1,4 @@
-# Fallback Level Outline
+# Vault Level Outline
 
 **Difficulty : 3/10**
 

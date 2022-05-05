@@ -1,4 +1,4 @@
-## Fallback Level Outline
+## Re-entrancy Level Outline
 
 **Difficulty : 6/10**
 

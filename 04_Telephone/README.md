@@ -1,4 +1,4 @@
-## Fallback Level Outline
+## Telephone Level Outline
 
 **Difficulty : 1/10**
 

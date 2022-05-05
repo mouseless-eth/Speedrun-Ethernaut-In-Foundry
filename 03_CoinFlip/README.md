@@ -1,4 +1,4 @@
-## Fallback Level Outline
+## CoinFlip Level Outline
 
 **Difficulty : 3/10**
 
