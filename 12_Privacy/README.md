@@ -64,6 +64,7 @@ output
 ```console
 0x0000000000000000000000000000000000000000000000000000000000000001
 ```
+> 1 equals true, 0 equals false
 
 we know that **storage slot 0** represents the variable `locked` as it is the first declared variable in our contrat. 
 
