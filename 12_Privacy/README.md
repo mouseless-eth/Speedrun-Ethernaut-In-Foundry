@@ -34,18 +34,17 @@ contract Privacy {
 
 ## Solution
 
-To solve this level, we need to know about how contract storage slots work. 
+To solve this level, we an understanding of how contract storage slots work and how they are assigned
 
-From the solidity docs : 
 - The wordsize of the EVM is equal to 256 bits (32 bytes)
+    - This means that each storage slot has a capacity of 32 bytes
 - Statically sized variables are laid out contigously in storage starting at slot 0
     - Statically sized variables reffer to variables with a fixed size 
-    - Example of dynamic variables include mappings and dynamicly-sized arrays
-- Multiple variables that are less than 32 bytes are packed into a single storage slot if possible based on the following rules :
+- If multiple variables of size less than 32 bytes are declared one after another, they are packed into a single storage slot based on the following rules :
     - The first item in a storage slot is stored lower-order aligned (little endian ordering) 
     - If an element type does not fit in the remaining part of a storage slot, it is moved to the next storage slot
     - Structs and array data always start a new slot and occupy whole slots (items inside a struct or array are packed tightly according to the above rules)
-- The elements of structs and arrays are stored after each other, just as though they  were given explicitly.
+- The elements of structs and arrays are stored after each other, just as though they were given explicitly.
 
 ##### Extra Info Not Related To Level
 - Due to their unpredictable size, mapping and dynamically-sized array types use a Keccak-256 hash computation to find the starting position of the value or the array data. These starting positions are always full stack slots.
@@ -55,7 +54,7 @@ Read more about layout of state variables in Storage from the docs [here](https:
 
 ### Walkthrough
 
-Let's inspect each memory slot individually and figure out what is going on 
+**Let's inspect each memory slot individually and figure out what is going on**
 
 1. let's inspect storage slot 0
 ```console
