@@ -118,7 +118,7 @@ output
 ```console
 0x44a557ce091a1a07e9a3901396684f550c3cacb7705a0fd31c8828e285faea82
 ```
-we know that storage slot 3 represents `data[0]` - the first element of the array data
+we know that storage slot 3 represents `data[0]`, the first element of the array data
 
 ```solidity
 bytes32[3] private data;
@@ -134,7 +134,7 @@ output
 ```console
 0x640a1bfd48f6be7abf68d08b273284d0e55ba9cfc823d8db74b24e6f486c5204
 ```
-we know that storage slot 4 represents `data[1]` - the second element of the array data
+we know that storage slot 4 represents `data[1]`, the second element of the array data
 
 ```solidity
 bytes32[3] private data;
@@ -148,7 +148,7 @@ output
 ```console
 0x08f99efe07ce4fbea4eee5523a0e5d66aeb986ab62a85e5e53c1400155e1ae62
 ```
-we know that storage slot 5 represents `data[2]` - the third element of the array data
+we know that storage slot 5 represents `data[2]`, the third element of the array data
 
 ```solidity
 bytes32[3] private data;
