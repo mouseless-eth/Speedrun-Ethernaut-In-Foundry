@@ -38,7 +38,7 @@ export LEVEL_ADDRESS=<your-instance-address-here>
 | King             | Spoofing contract that expects EOA           | 6/10       |
 | Re-entrancy      | Re-entrancy attacks                          | 6/10       |
 | Elevator         | Malicious interfaces                         | 4/10       |
-| Privacy          |                                              | 8/10       |
+| Privacy          | Layout of state variables in storage         | 8/10       |
 | Gatekeeper One   |                                              | 5/10       |
 | Gatekeeper Two   |                                              | 6/10       |
 | Naught Coin      |                                              | 5/10       |
