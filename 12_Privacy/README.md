@@ -48,15 +48,15 @@ To solve this level, we need an understanding of how contract storage slots work
 
 ##### Extra Info Not Related To Level
 - Due to their unpredictable size, mapping and dynamically-sized array types use a Keccak-256 hash computation to find the starting position of the value or the array data. These starting positions are always full stack slots.
-- Constant variables are stored in code not contract [storage](storage)
+- Constant variables are stored in code not contract storage
 
 Read more about layout of state variables in Storage from the docs [here](https://docs.soliditylang.org/en/v0.4.24/miscellaneous.html)
 
 ### Walkthrough
 
-**Let's inspect each memory slot individually and figure out what is going on**
+*Let's inspect each memory slot individually and make sense of what is going on
 
-1. let's inspect storage slot 0
+1. inspecting **storage slot 0**
 ```console
 cast storage $LEVEL_ADDRESS 0
 ```
@@ -65,16 +65,14 @@ output
 0x0000000000000000000000000000000000000000000000000000000000000001
 ```
 
-we know that storage slot 0 represents the variable `locked` as it is the first declared variable in our contrat. 
+we know that **storage slot 0** represents the variable `locked` as it is the first declared variable in our contrat. 
 
 ```solidity
 bool public locked = true;
 ```
-booleans require 1 byte of storage, but because the next variable in our contract `ID` is of type `uint256`, it takes up 32 bytes to store (which is the word size) meaning it cannot be packed with `locked` so it stored in the next storage slot. 
+boolean types require 1 byte of storage, but because the next variable in our contract `ID` is of type `uint256`, it takes up 32 bytes to store (a full storage slot) meaning it cannot be packed with `locked` so it stored in the next storage slot. 
 
-> notes that the word size of the EVM is 32 bytes (256 bits)
-
-2. inspecting storage slot 1
+#####2. inspecting storage slot 1
 ```console
 cast storage $LEVEL_ADDRESS 1
 ```
