@@ -56,7 +56,7 @@ Read more about layout of state variables in Storage from the docs [here](https:
 
 *Let's inspect each memory slot individually and make sense of what is going on
 
-##### 1. inspecting **storage slot 0**
+##### 1. Inspecting **storage slot 0**
 ```console
 cast storage $LEVEL_ADDRESS 0
 ```
@@ -71,7 +71,7 @@ bool public locked = true;
 ```
 boolean types require 1 byte of storage, but because the next variable in our contract : `ID` is of type `uint256`, it takes up 32 bytes to store (a full storage slot) meaning it cannot be packed with `locked` so it stored in the next storage slot. 
 
-##### 2. inspecting storage slot 1
+##### 2. Inspecting storage slot 1
 ```console
 cast storage $LEVEL_ADDRESS 1
 ```
@@ -88,7 +88,7 @@ uint256 public ID = block.timestamp;
 
 this means that the data we see is the hex representation of the block's unix timestamp
 
-##### 3. inspecting storage slot 2
+##### 3. Inspecting storage slot 2
 ```console
 cast storage $LEVEL_ADDRESS 2
 ```
@@ -110,7 +110,7 @@ remember that the evm uses little endian order when handling byte ordering so we
 - the byte `ff` is the uint8 variable **denomination**. We can confirm this as `ff` is `255` in decimal
 - the 2 bytes `be09` is the uint16 variable **akwardness**. The value represents the 16bit mask of the `block.timestamp`
 
-##### 4. inspecting storage slot 3
+##### 4. Inspecting storage slot 3
 ```console
 cast storage $LEVEL_ADDRESS 3
 ```
@@ -126,7 +126,7 @@ bytes32[3] private data;
 
 `data` is an array of bytes32 which means that each element takes up 32 bytes (a whole storage slot)
 
-##### 5. inspecting storage slot 4
+##### 5. Inspecting storage slot 4
 ```console
 cast storage $LEVEL_ADDRESS 4
 ```
@@ -140,7 +140,7 @@ we know that storage slot 4 represents `data[1]` - the second element of the arr
 bytes32[3] private data;
 ```
 
-##### 6. inspecting storage slot 5
+##### 6. Inspecting storage slot 5
 ```console
 cast storage $LEVEL_ADDRESS 5
 ```
@@ -155,7 +155,7 @@ bytes32[3] private data;
 ```
 we need the third element of `data` to pass the level, this is the value that we are interested in
 
-##### 7. because the "unlock(bytes16 _key)" function expects a bytes16 variable and not a bytes32, we need to only pass the first 16 bytes of `data[2]` to the unlock function to complete this level
+##### 7. Because the "unlock(bytes16 _key)" function expects a bytes16 variable and not a bytes32, we need to only pass the first 16 bytes of `data[2]` to the unlock function to complete this level
 ```console
 cast send $LEVEL_ADDRESS "unlock(bytes16)" 0x08f99efe07ce4fbea4eee5523a0e5d66 --private-key $PRIVATE_KEY
 ```
