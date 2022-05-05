@@ -54,7 +54,17 @@ import '@openzeppelin/contracts/token/ERC20/ERC20.sol';
 
 The contract inherits from [OpenZeppelin's ERC20 contract](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol) meaning that the level contract inherits all methods from ERC20.sol.
 
-ERC20.sol is an implementation of the IERC20 interface (ERC20 standard). The IERC20 interface has two transfer methods, `transfer(address to, uint256 amount) public returns (bool)` and `transferFrom(address from, address to, uint256 amount) public returns (bool)`. The level contract overrides the first transfer method but we can call the second transfer method which is inherited from OpenZeppelings ERC20.sol contract and untampered with.
+ERC20.sol is an implementation of the IERC20 interface (ERC20 standard). The IERC20 interface has two transfer methods  
+
+```solidity
+function transfer(address to, uint256 amount) public returns (bool)
+``` 
+and 
+```solidity
+function transferFrom(address from, address to, uint256 amount) public returns (bool)
+```
+
+The level contract overrides the first transfer method but we can call the second transfer method which is inherited from OpenZeppelings ERC20.sol contract and untampered with.
 
 The purpose of `transferFrom` is for other addresses (mainly smart contracts) to move tokens out of your address on your behalf. To allow an address to move any sum of tokens, we first need to give it permission by calling the `approve(address,uint256)` function which takes in the address that we allow to spend our tokens as well as the maximum number of tokens that the address can move. 
 
@@ -65,10 +75,12 @@ The `transferFrom` function seems unsafe at first but it is crucial for tasks su
 
 1. Approving our address to spend our tokens so that we can use the "transferFrom" function
 ```console
-cast send $LEVEL_ADDRESS "approve(address,uint256)" 0x527B0642b3902C3Bc29ae13D8208b86dA007aa26 1000000000000000000000000 --private-key $PRIVATE_KEY
+cast send $LEVEL_ADDRESS "approve(address,uint256)" 0x527B0642b3902C3Bc29ae13D8208b86dA007aa26 \
+1000000000000000000000000 --private-key $PRIVATE_KEY
 ```
 
 2. Calling contract's "transferFrom(address from, address to, uint256 amount)" function to transfer all tokens to a burn address
 ```console
-cast send $LEVEL_ADDRESS "transferFrom(address,address,uint256)" 0x527B0642b3902C3Bc29ae13D8208b86dA007aa26 0x000000000000000000000000000000000000dEaD 1000000000000000000000000 --private-key $PRIVATE_KEY
+cast send $LEVEL_ADDRESS "transferFrom(address,address,uint256)" 0x527B0642b3902C3Bc29ae13D8208b86dA007aa26 \
+0x000000000000000000000000000000000000dEaD 1000000000000000000000000 --private-key $PRIVATE_KEY
 ```
