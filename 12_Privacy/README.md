@@ -153,9 +153,11 @@ we know that storage slot 5 represents `data[2]`, the third element of the array
 ```solidity
 bytes32[3] private data;
 ```
-we need the third element of `data` to pass the level, this is the value that we are interested in
+we **need** the third element of `data` to pass the level, this is the value that we are interested in
 
-##### 7. Because the "unlock(bytes16 _key)" function expects a bytes16 variable and not a bytes32, we need to only pass the first 16 bytes of `data[2]` to the unlock function to complete this level
+##### 7. Sending transaction to complete the level
+
+Because the "unlock(bytes16 _key)" function expects a bytes16 variable and not a bytes32, we need to only pass the first 16 bytes of `data[2]` to the unlock function to complete this level
 ```console
 cast send $LEVEL_ADDRESS "unlock(bytes16)" 0x08f99efe07ce4fbea4eee5523a0e5d66 --private-key $PRIVATE_KEY
 ```
