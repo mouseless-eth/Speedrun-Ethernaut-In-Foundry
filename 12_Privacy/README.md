@@ -69,7 +69,7 @@ we know that **storage slot 0** represents the variable `locked` as it is the fi
 ```solidity
 bool public locked = true;
 ```
-boolean types require 1 byte of storage, but because the next variable in our contract `ID` is of type `uint256`, it takes up 32 bytes to store (a full storage slot) meaning it cannot be packed with `locked` so it stored in the next storage slot. 
+boolean types require 1 byte of storage, but because the next variable in our contract : `ID` is of type `uint256`, it takes up 32 bytes to store (a full storage slot) meaning it cannot be packed with `locked` so it stored in the next storage slot. 
 
 ##### 2. inspecting storage slot 1
 ```console
@@ -80,13 +80,13 @@ output
 0x000000000000000000000000000000000000000000000000000000006273be09
 ```
 
-we know that storage slot 1 represents the variable `ID`. This means that the data we see is the hex representation of the block's Unix timestap (time since epoch)
+we know that storage slot 1 represents the variable `ID`. 
 
 ```solidity
 uint256 public ID = block.timestamp;
 ```
 
-as mentioned before, `ID` takes up the whole storage slot as it is a `uint256` which requires 32 bytes (evm word size)
+this means that the data we see is the hex representation of the block's unix timestamp
 
 ##### 3. inspecting storage slot 2
 ```console
@@ -105,6 +105,7 @@ uint16 private awkwardness = uint16(now);
 ```
 
 remember that the evm uses little endian order when handling byte ordering so we read the memory slot from right to left
+
     - the byte `0a` is the uint8 variable **flattening**. We can confirm this as `a` is `10` in decimal
     - the byte `ff` is the uint8 variable **denomination**. We can confirm this as `ff` is `255` in decimal
     - the 2 bytes `be09` is the uint16 variable **akwardness**. The value represents the 16bit mask of the `block.timestamp`
