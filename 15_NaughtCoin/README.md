@@ -52,9 +52,9 @@ import '@openzeppelin/contracts/token/ERC20/ERC20.sol';
 
 ## Solution
 
-The contract inherits from [OpenZeppelin's ERC20 contract](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol) meaning that the level contract inherits all methods from ERC20.sol.
+The contract inherits from [OpenZeppelin's ERC20 contract](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol) meaning that the level contract inherits all methods from `ERC20.sol`
 
-ERC20.sol is an implementation of the IERC20 interface (ERC20 standard). The IERC20 interface has two transfer methods  
+`ERC20.sol` is an implementation of the IERC20 interface (ERC20 standard). The IERC20 interface has two transfer methods  
 
 ```solidity
 function transfer(address to, uint256 amount) public returns (bool)
