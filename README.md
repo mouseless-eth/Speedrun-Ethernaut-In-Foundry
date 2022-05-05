@@ -13,7 +13,7 @@ This repo contains walkthroughs and solutions to each level using only [Foundry]
 ### Config & Setup
 This project uses [environment variables](https://www.geeksforgeeks.org/environment-variables-in-linux-unix/) to handle all config variables:
 - `ETH_RPC_URL` this is **automatically** checked by forge and cast
-- `PRIVATE_KEY` this has to be **manually** added when using forge or cast
+- `PRIVATE_KEY` this has to be **manually** included when using forge or cast
 - `LEVEL_ADDRESS` instance address
 
 Environment variables can be set in the terminal as follows
