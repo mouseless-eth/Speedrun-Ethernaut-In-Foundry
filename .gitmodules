@@ -16,3 +16,6 @@
 [submodule "16_Preservation/lib/forge-std"]
 	path = 16_Preservation/lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
+[submodule "20_Denial/lib/forge-std"]
+	path = 20_Denial/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
