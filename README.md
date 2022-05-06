@@ -46,7 +46,7 @@ export LEVEL_ADDRESS=<your-instance-address-here>
 | Recovery         |                                              | 6/10       |
 | Magic Number     | Contract init and runtime opcodes            | 6/10       |
 | Alien Codex      |                                              | 7/10       |
-| Denial           |                                              | 5/10       |
+| Denial           | Ddos gas draining attack                     | 5/10       |
 | Shop             |                                              | 4/10       |
 | Dex              |                                              | 3/10       |
 | Dex Two          |                                              | 4/10       |

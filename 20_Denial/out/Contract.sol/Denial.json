@@ -1,0 +1,498 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "setWithdrawPartner",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "/home/admin/Projects/Learning/Speedrun-Ethernaut-Foundry/20_Denial/src/Contract.sol",
+    "id": 40,
+    "exportedSymbols": {
+      "Contract": [
+        33
+      ],
+      "Denial": [
+        39
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:373:0",
+    "nodes": [
+      {
+        "id": 1,
+        "nodeType": "PragmaDirective",
+        "src": "39:24:0",
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 33,
+        "nodeType": "ContractDefinition",
+        "src": "65:273:0",
+        "nodes": [
+          {
+            "id": 4,
+            "nodeType": "VariableDeclaration",
+            "src": "89:13:0",
+            "constant": false,
+            "mutability": "mutable",
+            "name": "denial",
+            "nameLocation": "96:6:0",
+            "scope": 33,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_Denial_$39",
+              "typeString": "contract Denial"
+            },
+            "typeName": {
+              "id": 3,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 2,
+                "name": "Denial",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 39,
+                "src": "89:6:0"
+              },
+              "referencedDeclaration": 39,
+              "src": "89:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Denial_$39",
+                "typeString": "contract Denial"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 25,
+            "nodeType": "FunctionDefinition",
+            "src": "109:120:0",
+            "body": {
+              "id": 24,
+              "nodeType": "Block",
+              "src": "138:91:0",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 13,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 9,
+                      "name": "denial",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4,
+                      "src": "148:6:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Denial_$39",
+                        "typeString": "contract Denial"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "id": 11,
+                          "name": "_denial",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 6,
+                          "src": "164:7:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 10,
+                        "name": "Denial",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 39,
+                        "src": "157:6:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_Denial_$39_$",
+                          "typeString": "type(contract Denial)"
+                        }
+                      },
+                      "id": 12,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "157:15:0",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Denial_$39",
+                        "typeString": "contract Denial"
+                      }
+                    },
+                    "src": "148:24:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Denial_$39",
+                      "typeString": "contract Denial"
+                    }
+                  },
+                  "id": 14,
+                  "nodeType": "ExpressionStatement",
+                  "src": "148:24:0"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "id": 20,
+                            "name": "this",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": -28,
+                            "src": "216:4:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_Contract_$33",
+                              "typeString": "contract Contract"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_contract$_Contract_$33",
+                              "typeString": "contract Contract"
+                            }
+                          ],
+                          "id": 19,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "208:7:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_address_$",
+                            "typeString": "type(address)"
+                          },
+                          "typeName": {
+                            "id": 18,
+                            "name": "address",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "208:7:0",
+                            "typeDescriptions": {}
+                          }
+                        },
+                        "id": 21,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "208:13:0",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "id": 15,
+                        "name": "denial",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4,
+                        "src": "182:6:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_Denial_$39",
+                          "typeString": "contract Denial"
+                        }
+                      },
+                      "id": 17,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "setWithdrawPartner",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 38,
+                      "src": "182:25:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address) external"
+                      }
+                    },
+                    "id": 22,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "182:40:0",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 23,
+                  "nodeType": "ExpressionStatement",
+                  "src": "182:40:0"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "parameters": {
+              "id": 7,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6,
+                  "mutability": "mutable",
+                  "name": "_denial",
+                  "nameLocation": "129:7:0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 25,
+                  "src": "121:15:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "121:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "120:17:0"
+            },
+            "returnParameters": {
+              "id": 8,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "138:0:0"
+            },
+            "scope": 33,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 32,
+            "nodeType": "FunctionDefinition",
+            "src": "235:100:0",
+            "body": {
+              "id": 31,
+              "nodeType": "Block",
+              "src": "262:73:0",
+              "statements": [
+                {
+                  "body": {
+                    "id": 29,
+                    "nodeType": "Block",
+                    "src": "284:45:0",
+                    "statements": []
+                  },
+                  "condition": {
+                    "hexValue": "74727565",
+                    "id": 28,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "bool",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "278:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    },
+                    "value": "true"
+                  },
+                  "id": 30,
+                  "nodeType": "WhileStatement",
+                  "src": "272:57:0"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "receive",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "parameters": {
+              "id": 26,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "242:2:0"
+            },
+            "returnParameters": {
+              "id": 27,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "262:0:0"
+            },
+            "scope": 33,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Contract",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          33
+        ],
+        "name": "Contract",
+        "nameLocation": "74:8:0",
+        "scope": 40,
+        "usedErrors": []
+      },
+      {
+        "id": 39,
+        "nodeType": "ContractDefinition",
+        "src": "340:71:0",
+        "nodes": [
+          {
+            "id": 38,
+            "nodeType": "FunctionDefinition",
+            "src": "363:46:0",
+            "functionSelector": "4e1c5914",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setWithdrawPartner",
+            "nameLocation": "372:18:0",
+            "parameters": {
+              "id": 36,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 35,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 38,
+                  "src": "391:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 34,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "391:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "390:9:0"
+            },
+            "returnParameters": {
+              "id": 37,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "408:0:0"
+            },
+            "scope": 39,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Denial",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          39
+        ],
+        "name": "Denial",
+        "nameLocation": "350:6:0",
+        "scope": 40,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  }
+}
