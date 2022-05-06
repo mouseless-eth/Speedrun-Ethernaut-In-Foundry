@@ -13,3 +13,6 @@
 [submodule "03_CoinFlip/lib/openzeppelin-contracts"]
 	path = 03_CoinFlip/lib/openzeppelin-contracts
 	url = https://github.com/Openzeppelin/openzeppelin-contracts
+[submodule "16_Preservation/lib/forge-std"]
+	path = 16_Preservation/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
