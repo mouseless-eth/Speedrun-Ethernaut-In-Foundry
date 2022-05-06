@@ -1,4 +1,4 @@
-## King Level Outline
+## Denial Level Outline
 
 **Difficulty : 5/10**
 
