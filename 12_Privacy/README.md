@@ -49,6 +49,10 @@ To solve this level, we need an understanding of how contract storage slots work
 ##### Extra Info Not Related To Level
 - Due to their unpredictable size, mapping and dynamically-sized array types use a Keccak-256 hash computation to find the starting position of the value or the array data. These starting positions are always full stack slots.
 - Constant variables are stored in code not contract storage
+- Contracts that inherit share the same storage slot
+    - Ordering of state variables is determined by the C3-linearized order of contracts starting with the most base-ward contract
+        - The contract that other contracts inherit features from is called the *base contract*
+        - the contract which inherits the features is called the *derived contract*
 
 Read more about layout of state variables in Storage from the docs [here](https://docs.soliditylang.org/en/v0.4.24/miscellaneous.html)
 
