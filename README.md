@@ -44,7 +44,7 @@ export LEVEL_ADDRESS=<your-instance-address-here>
 | Naught Coin      | Inheritance and transferFrom function        | 5/10       |
 | Preservation     | DelegateCall                                 | 8/10       |
 | Recovery         |                                              | 6/10       |
-| Magic Number     |                                              | 6/10       |
+| Magic Number     | Init and runtime opcodes                     | 6/10       |
 | Alien Codex      |                                              | 7/10       |
 | Denial           |                                              | 5/10       |
 | Shop             |                                              | 4/10       |
