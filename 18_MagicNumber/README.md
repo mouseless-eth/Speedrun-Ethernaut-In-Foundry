@@ -1,4 +1,4 @@
-## Fallback Level Outline
+## Magic Number Level Outline
 
 > This level was completed using `etherjs` not foundry
 
