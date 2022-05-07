@@ -83,13 +83,14 @@ cast call $LEVEL_ADDRESS "token2()"
 ```console
 cast send $LEVEL_ADDRESS "swap(address,address,uint)" $TOKEN1_ADDRESS $TOKEN2_ADDRESS 10 --gas 250000 --private-key $PRIVATE_KEY
 ```
-update of balances 
 ```
-[our balance]
+update of balances 
+
+[Our balance]
 token1 : 0
 token2 : 20
 
-[dex balance]
+[Dex balance]
 token1 : 110 
 token2 : 90
 ```
@@ -98,13 +99,14 @@ token2 : 90
 ```console
 cast send $LEVEL_ADDRESS "swap(address,address,uint)" $TOKEN2_ADDRESS $TOKEN1_ADDRESS 20 --gas 250000 --private-key $PRIVATE_KEY
 ```
-update of balances 
 ```
-[our balance]
+update of balances 
+
+[Our balance]
 token1 : 24
 token2 : 0
 
-[dex balance]
+[Dex balance]
 token1 : 86 
 token2 : 110
 ```
@@ -113,13 +115,14 @@ token2 : 110
 ```console
 cast send $LEVEL_ADDRESS "swap(address,address,uint)" $TOKEN1_ADDRESS $TOKEN2_ADDRESS 24 --gas 250000 --private-key $PRIVATE_KEY
 ```
-update of balances 
 ```
-[our balance]
+update of balances 
+
+[Our balance]
 token1 : 0
 token2 : 30
 
-[dex balance]
+[Dex balance]
 token1 : 110 
 token2 : 80
 ```
@@ -128,13 +131,14 @@ token2 : 80
 ```console
 cast send $LEVEL_ADDRESS "swap(address,address,uint)" $TOKEN2_ADDRESS $TOKEN1_ADDRESS 30 --gas 250000 --private-key $PRIVATE_KEY
 ```
-update of balances 
 ```
-[our balance]
+update of balances 
+
+[Our balance]
 token1 : 41
 token2 : 0 
 
-[dex balance]
+[Dex balance]
 token1 : 69
 token2 : 110
 ```
@@ -143,13 +147,14 @@ token2 : 110
 ```console
 cast send $LEVEL_ADDRESS "swap(address,address,uint)" $TOKEN1_ADDRESS $TOKEN2_ADDRESS 41 --gas 250000 --private-key $PRIVATE_KEY
 ```
-update of balances 
 ```
-[our balance]
+update of balances 
+
+[Our balance]
 token1 : 0
 token2 : 65
 
-[dex balance]
+[Dex balance]
 token1 : 110 
 token2 : 45
 ```
@@ -159,13 +164,14 @@ token2 : 45
 ```console
 cast send $LEVEL_ADDRESS "swap(address,address,uint)" $TOKEN2_ADDRESS $TOKEN1_ADDRESS 45 --gas 250000 --private-key $PRIVATE_KEY
 ```
-update of balances 
 ```
-[our balance]
+update of balances 
+
+[Our balance]
 token1 : 110
 token2 : 20
 
-[dex balance]
+[Dex balance]
 token1 : 0 
 token2 : 90
 ```
