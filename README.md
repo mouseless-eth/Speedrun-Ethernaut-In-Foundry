@@ -47,7 +47,7 @@ export LEVEL_ADDRESS=<your-instance-address-here>
 | Magic Number     | Contract init and runtime opcodes            | 6/10       |
 | Alien Codex      |                                              | 7/10       |
 | Denial           | Ddos gas draining attack                     | 5/10       |
-| Shop             |                                              | 4/10       |
+| Shop             | Malicious view function interfaces           | 4/10       |
 | Dex              |                                              | 3/10       |
 | Dex Two          |                                              | 4/10       |
 | Puzzle Wallet    |                                              | 7/10       |
