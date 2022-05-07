@@ -170,3 +170,5 @@ cast send $LEVEL_ADDRESS "unlock(bytes16)" 0x08f99efe07ce4fbea4eee5523a0e5d66 --
 [How to read Ethereum contract storage](https://medium.com/aigang-network/how-to-read-ethereum-contract-storage-44252c8af925) by Darius - A practical guide
 
 [Understanding Ethereum smart contract storage](https://programtheblockchain.com/posts/2018/03/09/understanding-ethereum-smart-contract-storage/)
+
+[Diving into the EVM](https://medium.com/@hayeah/diving-into-the-ethereum-vm-part-2-storage-layout-bc5349cb11b7) by Howard
