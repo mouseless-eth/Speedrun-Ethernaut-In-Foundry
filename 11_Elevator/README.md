@@ -36,7 +36,7 @@ We can create a 'switch' variable that can be flipped after every function call 
 
 ### Walkthrough
 
-1. create a new [forge project](https://book.getfoundry.sh/projects/creating-a-new-project.html) with the following contract in `src` 
+##### 1. create a new [forge project](https://book.getfoundry.sh/projects/creating-a-new-project.html) with the following contract in `src` 
 ```solidity
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
@@ -65,18 +65,18 @@ interface Elevator {
 }
 ```
 
-2. deploy our new contract
+##### 2. deploy our new contract
 ```console
 forge create src/Contract.sol:Building --constructor-args $LEVEL_ADDRESS --private-key $PRIVATE_KEY 
 ```
 
-3. call our newly deployed contract 
+##### 3. call our newly deployed contract 
 ```console
 cast send $LEVEL_ADDRESS "attack()" --gas 300000 --private-key $PRIVATE_KEY 
 ```
 > Replace $DEPLOYED_ADDRESS with the address of your deployed contract
 
-4. quick confirmation that boolean top has been changed
+##### 4. quick confirmation that boolean top has been changed
 ```console
 cast call $LEVEL_ADDRESS "top()"
 ```

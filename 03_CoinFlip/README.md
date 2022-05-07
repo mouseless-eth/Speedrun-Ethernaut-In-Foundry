@@ -50,7 +50,7 @@ Because the flip is calculated onchain using the previous blockhash, we can pred
 
 ### Walkthrough
 
-1. create a new [forge project](https://book.getfoundry.sh/projects/creating-a-new-project.html) with the following contract in `src` 
+##### 1. create a new [forge project](https://book.getfoundry.sh/projects/creating-a-new-project.html) with the following contract in `src` 
 ```solidity
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
@@ -79,12 +79,12 @@ interface CoinFlip {
 }
 ```
 
-2. deploy our new contract
+##### 2. deploy our new contract
 ```console
 forge create src/Contract.sol:FortuneTeller --constructor-args $LEVEL_ADDRESS --private-key  $PRIVATE_KEY
 ```
 
-3. create a simple bashscript to flip the coin 10 times
+##### 3. create a simple bashscript to flip the coin 10 times
 ```console
 touch flip.sh
 ```
@@ -100,7 +100,7 @@ done
 ```
 > Replace $DEPLOYED_ADDRESS with the address of your deployed contract
 
-4. run `flip.sh`
+##### 4. run `flip.sh`
 ```console
 chmod 777 flip.sh
 ./flip.sh

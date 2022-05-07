@@ -54,7 +54,7 @@ This level has a very similar solution to level 9_King.
 
 ### Walkthrough
 
-1. create a new [forge project](https://book.getfoundry.sh/projects/creating-a-new-project.html) with the following contract in `src` 
+##### 1. create a new [forge project](https://book.getfoundry.sh/projects/creating-a-new-project.html) with the following contract in `src` 
 ```solidity
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
@@ -80,7 +80,7 @@ interface Denial {
 }
 ```
 
-2. deploy our new contract
+##### 2. deploy our new contract
 ```console
 forge create src/Contract.sol:Contract --constructor-args $LEVEL_ADDRESS --private-key  $PRIVATE_KEY
 ```

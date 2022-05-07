@@ -39,7 +39,7 @@ contract Token {
 To pass this level, we need to send a transaction to cause an underflow resulting in a balance of 255. To do this we send 21 tokens from our address as the statement `balances[msg.sender] -= value` will cause an underflow due to our account only have 20 tokens worth of balance.
 
 ### Walkthrough
-1. underflowing our balance
+##### 1. underflowing our balance
 ```console
 cast send $LEVEL_ADDRESS "transfer(address _to, uint _value)" $LEVEL_ADDRESS 21 --private-key $PRIVATE_KEY
 ```
