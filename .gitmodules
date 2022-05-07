@@ -22,3 +22,6 @@
 [submodule "21_Shop/lib/forge-std"]
 	path = 21_Shop/lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
+[submodule "22_Dex/lib/forge-std"]
+	path = 22_Dex/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
