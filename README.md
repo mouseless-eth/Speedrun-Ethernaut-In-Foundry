@@ -48,8 +48,8 @@ export LEVEL_ADDRESS=<your-instance-address-here>
 | Alien Codex      |                                              | 7/10       |
 | Denial           | Ddos gas draining attack                     | 5/10       |
 | Shop             | Malicious view function interfaces           | 4/10       |
-| Dex              | Manipulating oracle-less pricedata           | 3/10       |
-| Dex Two          |                                              | 4/10       |
+| Dex              | Manipulating oracle-less price data          | 3/10       |
+| Dex Two          | Creating a malicious ERC20 token             | 4/10       |
 | Puzzle Wallet    |                                              | 7/10       |
 | Motorbike        |                                              | 6/10       |
 | DoubleEntryPoint |                                              | 4/10       |
