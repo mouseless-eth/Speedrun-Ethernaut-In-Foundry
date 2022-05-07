@@ -100,13 +100,11 @@ token2 : 90
 cast send $LEVEL_ADDRESS "swap(address,address,uint)" $TOKEN2_ADDRESS $TOKEN1_ADDRESS 20 --gas 250000 --private-key $PRIVATE_KEY
 ```
 ```
-update of balances 
-
-[Our balance]
+[Our balance after transaction]
 token1 : 24
 token2 : 0
 
-[Dex balance]
+[Dex balance after transaction]
 token1 : 86 
 token2 : 110
 ```
@@ -116,13 +114,11 @@ token2 : 110
 cast send $LEVEL_ADDRESS "swap(address,address,uint)" $TOKEN1_ADDRESS $TOKEN2_ADDRESS 24 --gas 250000 --private-key $PRIVATE_KEY
 ```
 ```
-update of balances 
-
-[Our balance]
+[Our balance after transaction]
 token1 : 0
 token2 : 30
 
-[Dex balance]
+[Dex balance after transaction]
 token1 : 110 
 token2 : 80
 ```
@@ -132,13 +128,11 @@ token2 : 80
 cast send $LEVEL_ADDRESS "swap(address,address,uint)" $TOKEN2_ADDRESS $TOKEN1_ADDRESS 30 --gas 250000 --private-key $PRIVATE_KEY
 ```
 ```
-update of balances 
-
-[Our balance]
+[Our balance after transaction]
 token1 : 41
 token2 : 0 
 
-[Dex balance]
+[Dex balance after transaction]
 token1 : 69
 token2 : 110
 ```
@@ -148,13 +142,11 @@ token2 : 110
 cast send $LEVEL_ADDRESS "swap(address,address,uint)" $TOKEN1_ADDRESS $TOKEN2_ADDRESS 41 --gas 250000 --private-key $PRIVATE_KEY
 ```
 ```
-update of balances 
-
-[Our balance]
+[Our balance after transaction]
 token1 : 0
 token2 : 65
 
-[Dex balance]
+[Dex balance after transaction]
 token1 : 110 
 token2 : 45
 ```
@@ -165,13 +157,11 @@ token2 : 45
 cast send $LEVEL_ADDRESS "swap(address,address,uint)" $TOKEN2_ADDRESS $TOKEN1_ADDRESS 45 --gas 250000 --private-key $PRIVATE_KEY
 ```
 ```
-update of balances 
-
-[Our balance]
+[Our balance after transaction]
 token1 : 110
 token2 : 20
 
-[Dex balance]
+[Dex balance after transaction]
 token1 : 0 
 token2 : 90
 ```
