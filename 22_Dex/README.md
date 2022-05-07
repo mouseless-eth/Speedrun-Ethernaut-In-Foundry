@@ -84,13 +84,11 @@ cast call $LEVEL_ADDRESS "token2()"
 cast send $LEVEL_ADDRESS "swap(address,address,uint)" $TOKEN1_ADDRESS $TOKEN2_ADDRESS 10 --gas 250000 --private-key $PRIVATE_KEY
 ```
 ```
-update of balances 
-
-[Our balance]
+[Our balance after transaction]
 token1 : 0
 token2 : 20
 
-[Dex balance]
+[Dex balance after transaction]
 token1 : 110 
 token2 : 90
 ```
