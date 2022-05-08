@@ -43,13 +43,13 @@ contract GatekeeperOne {
 
 ## Solution
 
+To pass the first modifier `gateOne()`, the transaction needs to come from a smart contract.
+
+To pass the second modifier `gateTwo()`, the remaining gas needs to be divisible by 8191. To satisfy this, we will use [foundry's debugger](https://book.getfoundry.sh/forge/debugger.html?highlight=debugger#debugger) to find the right gas amount in order to pass the check.
+
+To pass the third modifier `gateThree()`, we need to byte mask our address with `` to pass all three checks.
+
 ### Walkthrough
-
-to pass the first modifier `gateOne()`, the transaction needs to come from a smart contract.
-
-to pass the second modifier `gateTwo()`, the remaining gas needs to be divisible by 8191. To satisfy this, we will use [foundry's debugger](https://book.getfoundry.sh/forge/debugger.html?highlight=debugger#debugger) to find the right gas amount in order to pass the check.
-
-to pass the third modifier `gateThree()`, we need to byte mask our address with `` to pass all three checks.
 
 ##### 1. Create a new [forge project](https://book.getfoundry.sh/projects/creating-a-new-project.html) with the following contract in `src` 
 
