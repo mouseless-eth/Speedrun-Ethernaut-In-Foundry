@@ -113,7 +113,7 @@ combinding our `init opcodes` and `runtime opcodes` yields :
  
 #### Part Three : Deploying Contract
 
-##### 1. let's create the contract from your browser console on Ethernaut - no idea how to do this step in foundry :( 
+##### 1. Let's create the contract from your browser console on Ethernaut - no idea how to do this step in foundry :( 
 
 open your browser console and exectute the following
 
@@ -126,7 +126,7 @@ var tx = {
 web3.eth.sendTransaction(tx, (err,res)=>{console.log(err,res);});
 ```
 
-##### 2. let's submit our new contract instance to the level
+##### 2. Let's submit our new contract instance to the level
 ```console
 cast send $LEVEL_ADDRESS "setSolver(address)" $DEPLOYED_ADDRESS --private-key $PRIVATE_KEY
 ``` 

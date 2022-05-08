@@ -60,13 +60,13 @@ contract SimpleToken {
 Contract addresses are created in a determinalistic way, we can reverse engineer the address or we could just check etherscan.
 
 ### Walkthrough
-##### 1. find the address of the contract using etherscan by checking internal txs of the level instance creation transaction
+##### 1. Find the address of the contract using etherscan by checking internal txs of the level instance creation transaction
 
 ```
 https://rinkeby.etherscan.io
 ```
 
-##### 2. call the `destory()` function to retrieve the lost funds
+##### 2. Call the `destory()` function to retrieve the lost funds
 ```console
 cast send $LOST_CONTRACT_ADDRESS "destroy(address)" $YOUR_ADDRESS --private-key $PRIVATE_KEY
 ```

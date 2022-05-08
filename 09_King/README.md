@@ -42,7 +42,7 @@ To make sure that we keep the crown when someone tries to claim it. We create a 
 
 ### Walkthrough
 
-##### 1. create a new [forge project](https://book.getfoundry.sh/projects/creating-a-new-project.html) with the following contract in `src` 
+##### 1. Create a new [forge project](https://book.getfoundry.sh/projects/creating-a-new-project.html) with the following contract in `src` 
 ```solidity
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
@@ -64,12 +64,12 @@ contract ImposterKing {
 }
 ```
 
-##### 2. deploy our new contract
+##### 2. Deploy our new contract
 ```console
 forge create src/Contract.sol:ImposterKing --constructor-args $LEVEL_ADDRESS --private-key  $PRIVATE_KEY
 ```
 
-##### 3. finding the current value of prize to see how much we need to overthrow the current king
+##### 3. Finding the current value of prize to see how much we need to overthrow the current king
 ```console
 cast call $LEVEL_ADDRESS "prize()" | cast --to-dec
 ```
@@ -79,7 +79,7 @@ output
 ```
 > take note that this is the value of prize in wei, meaning that we need to send more than 1000000000000000wei to become the new king
 
-##### 4. call the "claimCrown()" function on our newly deployed contract along with some eth
+##### 4. Call the "claimCrown()" function on our newly deployed contract along with some eth
 ```console
 cast send $DEPLOYED_ADDRESS "claimCrown()" --value 1000000000000001wei --gas 80000 --private-key=$PRIVATE_KEY 
 ```

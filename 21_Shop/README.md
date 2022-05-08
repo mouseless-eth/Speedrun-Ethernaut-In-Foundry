@@ -37,7 +37,7 @@ Functions with the **view modifier** cannot modify state so we need to monitor t
 
 ### Walkthrough
 
-##### 1. create a new [forge project](https://book.getfoundry.sh/projects/creating-a-new-project.html) with the following contract in `src` 
+##### 1. Create a new [forge project](https://book.getfoundry.sh/projects/creating-a-new-project.html) with the following contract in `src` 
 ```solidity
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
@@ -64,12 +64,12 @@ interface Shop {
 }
 ```
 
-##### 2. deploy our new contract
+##### 2. Deploy our new contract
 ```console
 forge create src/Contract.sol:Buyer --constructor-args $LEVEL_ADDRESS --private-key  $PRIVATE_KEY
 ```
 
-##### 3. call our newly deployed contract 
+##### 3. Call our newly deployed contract 
 ```console
 cast send $DEPLOYED_ADDRESS "attack()" --gas 90000 --private-key=$PRIVATE_KEY 
 ```
