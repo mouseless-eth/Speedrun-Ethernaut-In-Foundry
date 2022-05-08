@@ -45,7 +45,7 @@ export LEVEL_ADDRESS=<your-instance-address-here>
 | Preservation     | DelegateCall                                 | 8/10       |
 | Recovery         | Contract address creation                    | 6/10       |
 | Magic Number     | Contract init and runtime opcodes            | 6/10       |
-| Alien Codex      |                                              | 7/10       |
+| Alien Codex      | Writing to any storage slot using overflows  | 7/10       |
 | Denial           | Ddos gas draining attack                     | 5/10       |
 | Shop             | Malicious view function interfaces           | 4/10       |
 | Dex              | Manipulating oracle-less price data          | 3/10       |
