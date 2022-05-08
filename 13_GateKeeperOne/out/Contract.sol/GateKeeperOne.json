@@ -31,23 +31,23 @@
     "linkReferences": {}
   },
   "ast": {
-    "absolutePath": "/home/admin/Projects/Learning/Ethernauts-Foundry/13_gateKeeperOne/src/Contract.sol",
-    "id": 20396,
+    "absolutePath": "/home/admin/Projects/Learning/Speedrun-Ethernaut-In-Foundry/13_GateKeeperOne/src/Contract.sol",
+    "id": 46,
     "exportedSymbols": {
       "Attack": [
-        20387
+        37
       ],
       "GateKeeperOne": [
-        20395
+        45
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "39:511:5",
+    "src": "39:511:0",
     "nodes": [
       {
-        "id": 20351,
+        "id": 1,
         "nodeType": "PragmaDirective",
-        "src": "39:24:5",
+        "src": "39:24:0",
         "literals": [
           "solidity",
           "^",
@@ -56,69 +56,69 @@
         ]
       },
       {
-        "id": 20387,
+        "id": 37,
         "nodeType": "ContractDefinition",
-        "src": "65:394:5",
+        "src": "65:394:0",
         "nodes": [
           {
-            "id": 20354,
+            "id": 4,
             "nodeType": "VariableDeclaration",
-            "src": "87:24:5",
+            "src": "87:24:0",
             "constant": false,
             "mutability": "mutable",
             "name": "gateKeeper",
-            "nameLocation": "101:10:5",
-            "scope": 20387,
+            "nameLocation": "101:10:0",
+            "scope": 37,
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_GateKeeperOne_$20395",
+              "typeIdentifier": "t_contract$_GateKeeperOne_$45",
               "typeString": "contract GateKeeperOne"
             },
             "typeName": {
-              "id": 20353,
+              "id": 3,
               "nodeType": "UserDefinedTypeName",
               "pathNode": {
-                "id": 20352,
+                "id": 2,
                 "name": "GateKeeperOne",
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 20395,
-                "src": "87:13:5"
+                "referencedDeclaration": 45,
+                "src": "87:13:0"
               },
-              "referencedDeclaration": 20395,
-              "src": "87:13:5",
+              "referencedDeclaration": 45,
+              "src": "87:13:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_GateKeeperOne_$20395",
+                "typeIdentifier": "t_contract$_GateKeeperOne_$45",
                 "typeString": "contract GateKeeperOne"
               }
             },
             "visibility": "internal"
           },
           {
-            "id": 20366,
+            "id": 16,
             "nodeType": "FunctionDefinition",
-            "src": "118:89:5",
+            "src": "118:89:0",
             "body": {
-              "id": 20365,
+              "id": 15,
               "nodeType": "Block",
-              "src": "151:56:5",
+              "src": "151:56:0",
               "statements": [
                 {
                   "expression": {
-                    "id": 20363,
+                    "id": 13,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 20359,
+                      "id": 9,
                       "name": "gateKeeper",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 20354,
-                      "src": "161:10:5",
+                      "referencedDeclaration": 4,
+                      "src": "161:10:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_GateKeeperOne_$20395",
+                        "typeIdentifier": "t_contract$_GateKeeperOne_$45",
                         "typeString": "contract GateKeeperOne"
                       }
                     },
@@ -127,12 +127,12 @@
                     "rightHandSide": {
                       "arguments": [
                         {
-                          "id": 20361,
+                          "id": 11,
                           "name": "_gateKeeper",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 20356,
-                          "src": "188:11:5",
+                          "referencedDeclaration": 6,
+                          "src": "188:11:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -146,18 +146,18 @@
                             "typeString": "address"
                           }
                         ],
-                        "id": 20360,
+                        "id": 10,
                         "name": "GateKeeperOne",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 20395,
-                        "src": "174:13:5",
+                        "referencedDeclaration": 45,
+                        "src": "174:13:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_GateKeeperOne_$20395_$",
+                          "typeIdentifier": "t_type$_t_contract$_GateKeeperOne_$45_$",
                           "typeString": "type(contract GateKeeperOne)"
                         }
                       },
-                      "id": 20362,
+                      "id": 12,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -165,22 +165,22 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "174:26:5",
+                      "src": "174:26:0",
                       "tryCall": false,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_GateKeeperOne_$20395",
+                        "typeIdentifier": "t_contract$_GateKeeperOne_$45",
                         "typeString": "contract GateKeeperOne"
                       }
                     },
-                    "src": "161:39:5",
+                    "src": "161:39:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_GateKeeperOne_$20395",
+                      "typeIdentifier": "t_contract$_GateKeeperOne_$45",
                       "typeString": "contract GateKeeperOne"
                     }
                   },
-                  "id": 20364,
+                  "id": 14,
                   "nodeType": "ExpressionStatement",
-                  "src": "161:39:5"
+                  "src": "161:39:0"
                 }
               ]
             },
@@ -190,18 +190,18 @@
             "name": "",
             "nameLocation": "-1:-1:-1",
             "parameters": {
-              "id": 20357,
+              "id": 7,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 20356,
+                  "id": 6,
                   "mutability": "mutable",
                   "name": "_gateKeeper",
-                  "nameLocation": "138:11:5",
+                  "nameLocation": "138:11:0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 20366,
-                  "src": "130:19:5",
+                  "scope": 16,
+                  "src": "130:19:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -209,10 +209,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 20355,
+                    "id": 5,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "130:7:5",
+                    "src": "130:7:0",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -222,42 +222,42 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "129:21:5"
+              "src": "129:21:0"
             },
             "returnParameters": {
-              "id": 20358,
+              "id": 8,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "151:0:5"
+              "src": "151:0:0"
             },
-            "scope": 20387,
+            "scope": 37,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "id": 20386,
+            "id": 36,
             "nodeType": "FunctionDefinition",
-            "src": "324:133:5",
+            "src": "324:133:0",
             "body": {
-              "id": 20385,
+              "id": 35,
               "nodeType": "Block",
-              "src": "359:98:5",
+              "src": "359:98:0",
               "statements": [
                 {
                   "assignments": [
-                    20372
+                    22
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 20372,
+                      "id": 22,
                       "mutability": "mutable",
                       "name": "key",
-                      "nameLocation": "376:3:5",
+                      "nameLocation": "376:3:0",
                       "nodeType": "VariableDeclaration",
-                      "scope": 20385,
-                      "src": "369:10:5",
+                      "scope": 35,
+                      "src": "369:10:0",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -265,10 +265,10 @@
                         "typeString": "bytes8"
                       },
                       "typeName": {
-                        "id": 20371,
+                        "id": 21,
                         "name": "bytes8",
                         "nodeType": "ElementaryTypeName",
-                        "src": "369:6:5",
+                        "src": "369:6:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes8",
                           "typeString": "bytes8"
@@ -277,24 +277,24 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 20376,
+                  "id": 26,
                   "initialValue": {
                     "commonType": {
                       "typeIdentifier": "t_bytes8",
                       "typeString": "bytes8"
                     },
-                    "id": 20375,
+                    "id": 25,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
-                      "id": 20373,
+                      "id": 23,
                       "name": "addr",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 20368,
-                      "src": "382:4:5",
+                      "referencedDeclaration": 18,
+                      "src": "382:4:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes8",
                         "typeString": "bytes8"
@@ -304,39 +304,39 @@
                     "operator": "&",
                     "rightExpression": {
                       "hexValue": "307846464646464646463030303046464646",
-                      "id": 20374,
+                      "id": 24,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "389:18:5",
+                      "src": "389:18:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_18446744069414649855_by_1",
                         "typeString": "int_const 18446744069414649855"
                       },
                       "value": "0xFFFFFFFF0000FFFF"
                     },
-                    "src": "382:25:5",
+                    "src": "382:25:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes8",
                       "typeString": "bytes8"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "369:38:5"
+                  "src": "369:38:0"
                 },
                 {
                   "expression": {
                     "arguments": [
                       {
-                        "id": 20382,
+                        "id": 32,
                         "name": "key",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 20372,
-                        "src": "446:3:5",
+                        "referencedDeclaration": 22,
+                        "src": "446:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes8",
                           "typeString": "bytes8"
@@ -358,32 +358,32 @@
                           }
                         ],
                         "expression": {
-                          "id": 20377,
+                          "id": 27,
                           "name": "gateKeeper",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 20354,
-                          "src": "417:10:5",
+                          "referencedDeclaration": 4,
+                          "src": "417:10:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_GateKeeperOne_$20395",
+                            "typeIdentifier": "t_contract$_GateKeeperOne_$45",
                             "typeString": "contract GateKeeperOne"
                           }
                         },
-                        "id": 20379,
+                        "id": 29,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "enter",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 20394,
-                        "src": "417:16:5",
+                        "referencedDeclaration": 44,
+                        "src": "417:16:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_external_nonpayable$_t_bytes8_$returns$_t_bool_$",
                           "typeString": "function (bytes8) external returns (bool)"
                         }
                       },
-                      "id": 20381,
+                      "id": 31,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -395,14 +395,14 @@
                       "options": [
                         {
                           "hexValue": "3635303834",
-                          "id": 20380,
+                          "id": 30,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
                           "kind": "number",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "439:5:5",
+                          "src": "439:5:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_rational_65084_by_1",
                             "typeString": "int_const 65084"
@@ -410,13 +410,13 @@
                           "value": "65084"
                         }
                       ],
-                      "src": "417:28:5",
+                      "src": "417:28:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_bytes8_$returns$_t_bool_$gas",
                         "typeString": "function (bytes8) external returns (bool)"
                       }
                     },
-                    "id": 20383,
+                    "id": 33,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -424,16 +424,16 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "417:33:5",
+                    "src": "417:33:0",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 20384,
+                  "id": 34,
                   "nodeType": "ExpressionStatement",
-                  "src": "417:33:5"
+                  "src": "417:33:0"
                 }
               ]
             },
@@ -442,20 +442,20 @@
             "kind": "function",
             "modifiers": [],
             "name": "enter",
-            "nameLocation": "333:5:5",
+            "nameLocation": "333:5:0",
             "parameters": {
-              "id": 20369,
+              "id": 19,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 20368,
+                  "id": 18,
                   "mutability": "mutable",
                   "name": "addr",
-                  "nameLocation": "346:4:5",
+                  "nameLocation": "346:4:0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 20386,
-                  "src": "339:11:5",
+                  "scope": 36,
+                  "src": "339:11:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -463,10 +463,10 @@
                     "typeString": "bytes8"
                   },
                   "typeName": {
-                    "id": 20367,
+                    "id": 17,
                     "name": "bytes8",
                     "nodeType": "ElementaryTypeName",
-                    "src": "339:6:5",
+                    "src": "339:6:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes8",
                       "typeString": "bytes8"
@@ -475,15 +475,15 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "338:13:5"
+              "src": "338:13:0"
             },
             "returnParameters": {
-              "id": 20370,
+              "id": 20,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "359:0:5"
+              "src": "359:0:0"
             },
-            "scope": 20387,
+            "scope": 37,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
@@ -496,41 +496,41 @@
         "contractKind": "contract",
         "fullyImplemented": true,
         "linearizedBaseContracts": [
-          20387
+          37
         ],
         "name": "Attack",
-        "nameLocation": "74:6:5",
-        "scope": 20396,
+        "nameLocation": "74:6:0",
+        "scope": 46,
         "usedErrors": []
       },
       {
-        "id": 20395,
+        "id": 45,
         "nodeType": "ContractDefinition",
-        "src": "461:88:5",
+        "src": "461:88:0",
         "nodes": [
           {
-            "id": 20394,
+            "id": 44,
             "nodeType": "FunctionDefinition",
-            "src": "491:56:5",
+            "src": "491:56:0",
             "functionSelector": "3370204e",
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "enter",
-            "nameLocation": "500:5:5",
+            "nameLocation": "500:5:0",
             "parameters": {
-              "id": 20390,
+              "id": 40,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 20389,
+                  "id": 39,
                   "mutability": "mutable",
                   "name": "_gateKey",
-                  "nameLocation": "513:8:5",
+                  "nameLocation": "513:8:0",
                   "nodeType": "VariableDeclaration",
-                  "scope": 20394,
-                  "src": "506:15:5",
+                  "scope": 44,
+                  "src": "506:15:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -538,10 +538,10 @@
                     "typeString": "bytes8"
                   },
                   "typeName": {
-                    "id": 20388,
+                    "id": 38,
                     "name": "bytes8",
                     "nodeType": "ElementaryTypeName",
-                    "src": "506:6:5",
+                    "src": "506:6:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes8",
                       "typeString": "bytes8"
@@ -550,21 +550,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "505:17:5"
+              "src": "505:17:0"
             },
             "returnParameters": {
-              "id": 20393,
+              "id": 43,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 20392,
+                  "id": 42,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 20394,
-                  "src": "541:4:5",
+                  "scope": 44,
+                  "src": "541:4:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -572,10 +572,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 20391,
+                    "id": 41,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "541:4:5",
+                    "src": "541:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -584,9 +584,9 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "540:6:5"
+              "src": "540:6:0"
             },
-            "scope": 20395,
+            "scope": 45,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
@@ -599,11 +599,11 @@
         "contractKind": "interface",
         "fullyImplemented": false,
         "linearizedBaseContracts": [
-          20395
+          45
         ],
         "name": "GateKeeperOne",
-        "nameLocation": "471:13:5",
-        "scope": 20396,
+        "nameLocation": "471:13:0",
+        "scope": 46,
         "usedErrors": []
       }
     ],
