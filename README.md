@@ -40,7 +40,7 @@ export LEVEL_ADDRESS=<your-instance-address-here>
 | Elevator         | Malicious interfaces                         | 4/10       |
 | Privacy          | Layout of state variables in storage         | 8/10       |
 | Gatekeeper One   | Bytemasking and gasLeft function             | 5/10       |
-| Gatekeeper Two   |                                              | 6/10       |
+| Gatekeeper Two   | Calling from code from constructor           | 6/10       |
 | Naught Coin      | Inheritance and transferFrom function        | 5/10       |
 | Preservation     | DelegateCall                                 | 8/10       |
 | Recovery         | Contract address creation                    | 6/10       |
