@@ -56,6 +56,8 @@ Level Name link leads to solution write up.
 | [Motorbike](./25_Moterbike/README.md)               | Upgradable pattern and EIP-1967             | 6/10       |
 | [DoubleEntryPoint](./26_DoubleEntryPoint/README.md) | Fortra contracts                            | 4/10       |
 
+--- 
+ 
 ### Contribution
 All contribution is welcome, if you find any mistakes or have a better implementation feel free to **create a pull request**.
 
