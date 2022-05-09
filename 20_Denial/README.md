@@ -88,4 +88,4 @@ forge create src/Contract.sol:Contract --constructor-args $LEVEL_ADDRESS --priva
 ### Important Lesson From This Level
 This level demonstrates that external calls to unknown contracts can still create **denial of service attack vectors** if a fixed amount of gas is not specified.
 
-### [:arrow_left: Back To Main Menu](../)
+### [:arrow_left: Back To Main Menu](../README.md)

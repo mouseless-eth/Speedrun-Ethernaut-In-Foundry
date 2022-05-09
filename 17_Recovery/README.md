@@ -80,4 +80,4 @@ Because of this, one can send ether to a pre-determined address (which has no pr
 
 [More info about the above example here](martin.swende.se/blog/Ethereum_quirks_and_vulns.html)
 
-### [:arrow_left: Back To Main Menu](../)
+### [:arrow_left: Back To Main Menu](../README.md)

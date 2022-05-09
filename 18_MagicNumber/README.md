@@ -138,4 +138,4 @@ cast send $LEVEL_ADDRESS "setSolver(address)" $DEPLOYED_ADDRESS --private-key $P
 
 0xSage for their [walkthrough on this level](https://medium.com/coinmonks/ethernaut-lvl-19-magicnumber-walkthrough-how-to-deploy-contracts-using-raw-assembly-opcodes-c50edb0f71a2)
 
-### [:arrow_left: Back To Main Menu](../)
+### [:arrow_left: Back To Main Menu](../README.md)

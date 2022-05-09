@@ -63,4 +63,4 @@ Notice how the contract's "contructor" is not really a constructor
 cast send $LEVEL_ADDRESS "Fal1out()" --private-key $PRIVATE_KEY
 ```
 
-### [:arrow_left: Back To Main Menu](../)
+### [:arrow_left: Back To Main Menu](../README.md)

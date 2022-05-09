@@ -92,4 +92,4 @@ cast send $LEVEL_ADDRESS "setFirstTime(uint)" $NEW_OWNER --gas 60000 --private-k
 ```
 > Replace $NEW_OWNER with your EOA address 
 
-### [:arrow_left: Back To Main Menu](../)
+### [:arrow_left: Back To Main Menu](../README.md)
