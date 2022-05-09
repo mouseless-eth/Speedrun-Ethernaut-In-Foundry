@@ -22,6 +22,9 @@ export PRIVATE_KEY=<your-private-key-here>
 export ETH_RPC_URL=<your-rinkerby-node-url-here>
 export LEVEL_ADDRESS=<your-instance-address-here>
 ```
+**Note:** Foundry offers multiple ways to store your private key for signing, the method proposed above is **not secure** and **should only be used with a temporary wallet** for the purpose of this walkthrough.
+
+> Foundry offers support for raw private keys, keystore private keys, and hardware wallets. Read more about how to implement each one [here](https://book.getfoundry.sh/reference/cast/cast-send.html)
 
 ### Level Solution Navigation
 
