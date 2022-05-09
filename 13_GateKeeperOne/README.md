@@ -89,4 +89,7 @@ cast send $DEPLOYED_ADDRESS "enter()" --private-key=$PRIVATE_KEY
 ```
 > Replace $DEPLOYED_ADDRESS with the address of your deployed contract
 
-## [:arrow_left: Back To Main Menu](../README.md)
+
+---
+
+##### [:arrow_left: Back To Main Menu](../README.md)

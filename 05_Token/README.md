@@ -47,4 +47,7 @@ cast send $LEVEL_ADDRESS "transfer(address _to, uint _value)" $LEVEL_ADDRESS 21 
 ## Further Reading
 Integer overflows and underflows can be prevented by using OpenZeppelin's [SafeMath library](https://docs.openzeppelin.com/contracts/2.x/api/math)
 
-### [:arrow_left: Back To Main Menu](../README.md)
+
+---
+
+##### [:arrow_left: Back To Main Menu](../README.md)

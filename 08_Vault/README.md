@@ -64,4 +64,7 @@ cast send $LEVEL_ADDRESS "unlock(bytes32)" 0x412076657279207374726f6e67207365637
 To ensure that data is private, it needs to be encrypted before being put onto the blockchain. In this scenario, the decryption key should never be sent on-chain, as it will then be visible to anyone who looks for it. [zk-SNARKs](https://blog.ethereum.org/2016/12/05/zksnarks-in-a-nutshell/) provide a way to determine whether someone possesses a secret parameter, without ever having to reveal the parameter.
 
 
-### [:arrow_left: Back To Main Menu](../)
+
+---
+
+##### [:arrow_left: Back To Main Menu](../README.md)

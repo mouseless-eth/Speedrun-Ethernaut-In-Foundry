@@ -185,4 +185,7 @@ $LEFT_PADDED_EOA --private-key $PRIVATE_KEY
 ## Further Reading
 [Write up to a similar problem](https://weka.medium.com/announcing-the-winners-of-the-first-underhanded-solidity-coding-contest-282563a87079)
 
-### [:arrow_left: Back To Main Menu](../README.md)
+
+---
+
+##### [:arrow_left: Back To Main Menu](../README.md)
