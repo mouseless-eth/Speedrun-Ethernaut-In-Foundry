@@ -59,3 +59,5 @@ cast send $DEPLOYED_ADDRESS "explode()" --value 0.0001ether --private-key=$PRIVA
 
 ## Further Reading
 As seen from above, it is important not to count on the invariant `address(this).balance == 0` for any contract logic.
+
+### [:arrow_left: Back To Main Menu](../)

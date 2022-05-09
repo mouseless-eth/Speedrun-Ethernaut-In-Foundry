@@ -84,3 +84,5 @@ output
 cast send $DEPLOYED_ADDRESS "claimCrown()" --value 1000000000000001wei --gas 80000 --private-key=$PRIVATE_KEY 
 ```
 > Replace $DEPLOYED_ADDRESS with the address of your deployed contract
+
+### [:arrow_left: Back To Main Menu](../)

@@ -75,5 +75,4 @@ cast send $DEPLOYED_ADDRESS "attack()" --gas 90000 --private-key=$PRIVATE_KEY
 ```
 > Replace $DEPLOYED_ADDRESS with the address of your deployed contract
 
-## Further Reading
-
+### [:arrow_left: Back To Main Menu](../)

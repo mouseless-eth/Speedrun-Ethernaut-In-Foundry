@@ -108,3 +108,5 @@ chmod 777 flip.sh
 
 ## Further Reading
 How to avoid generating numbers onchain by using [Chainlink VRF](https://docs.chain.link/docs/get-a-random-number)
+
+### [:arrow_left: Back To Main Menu](../)
