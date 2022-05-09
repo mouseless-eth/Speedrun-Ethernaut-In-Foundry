@@ -1,4 +1,4 @@
-# Speedrun Ethernaut With Foundry :shipit:
+[#](#) Speedrun Ethernaut With Foundry :shipit:
 
 OpenZeppelin's wargame, [Ethernaut](https://ethernaut.openzeppelin.com/) teaches practical smart contract security concepts through CTF like challenges. 
 
@@ -25,31 +25,33 @@ export LEVEL_ADDRESS=<your-instance-address-here>
 
 ### Level Solution Navigation
 
-| Level Name       | Concepts Explored                            | Difficulty |
-| -----------      | -----------                                  | :----:     |
-| Fallback         | Fallback & receive functions                 | 1/10       |
-| Fallout          | Misnaming functions                          | 2/10       |
-| Coin Flip        | Predicting onchain randomness                | 3/10       |
-| Telephone        | Msg.sender vs tx.origin                      | 1/10       |
-| Token            | Overflow and underflows attacks              | 3/10       |
-| Delegation       | DelegateCall                                 | 4/10       |
-| Force            | SelfDestruct function                        | 5/10       |
-| Vault            | Inspecting contract storage slots            | 3/10       |
-| King             | Spoofing contract that expects EOA           | 6/10       |
-| Re-entrancy      | Re-entrancy attacks                          | 6/10       |
-| Elevator         | Malicious interfaces                         | 4/10       |
-| Privacy          | Layout of state variables in storage         | 8/10       |
-| Gatekeeper One   | Bytemasking and gasLeft function             | 5/10       |
-| Gatekeeper Two   | Calling from code from constructor           | 6/10       |
-| Naught Coin      | Inheritance and transferFrom function        | 5/10       |
-| Preservation     | DelegateCall                                 | 8/10       |
-| Recovery         | Contract address creation                    | 6/10       |
-| Magic Number     | Contract init and runtime opcodes            | 6/10       |
-| Alien Codex      | Writing to any storage slot using overflows  | 7/10       |
-| Denial           | Ddos gas draining attack                     | 5/10       |
-| Shop             | Malicious view function interfaces           | 4/10       |
-| Dex              | Manipulating oracle-less price data          | 3/10       |
-| Dex Two          | Creating a malicious ERC20 token             | 4/10       |
-| Puzzle Wallet    |                                              | 7/10       |
-| Motorbike        |                                              | 6/10       |
-| DoubleEntryPoint |                                              | 4/10       |
+Level Name link leads to solution write up.
+
+| Level Name                                          | Concepts Explored                           | Difficulty |
+| -----------                                         | -----------                                 | :----:     |
+| [Fallback](./01_Fallback/README.md)                 | Fallback & receive functions                | 1/10       |
+| [Fallout](./02_Fallout/README.md)                   | Misnaming functions                         | 2/10       |
+| [Coin Flip](./03_CoinFlip/README.md)                | Predicting onchain randomness               | 3/10       |
+| [Telephone](./04_Telephone/README.md)               | Msg.sender vs tx.origin                     | 1/10       |
+| [Token](./05_Token/README.md)                       | Overflow and underflows attacks             | 3/10       |
+| [Delegation](./06_Delegation/README.md)             | DelegateCall                                | 4/10       |
+| [Force](./07_Force/README.md)                       | SelfDestruct function                       | 5/10       |
+| [Vault](./08_Vault/README.md)                       | Inspecting contract storage slots           | 3/10       |
+| [King](./09_King/README.md)                         | Spoofing contract that expects EOA          | 6/10       |
+| [Re-entrancy](./10_Reentrancy/README.md)            | Re-entrancy attacks                         | 6/10       |
+| [Elevator](./11_Elevator/README.md)                 | Malicious interfaces                        | 4/10       |
+| [Privacy](./12_Privacy/README.md)                   | Layout of state variables in storage        | 8/10       |
+| [Gatekeeper One](./13_GateKeeperOne/README.md)      | Bytemasking and gasLeft function            | 5/10       |
+| [Gatekeeper Two](./14_GateKeeperTwo/README.md)      | Calling from code from constructor          | 6/10       |
+| [Naught Coin](./15_NaughtCoin/README.md)            | Inheritance and transferFrom function       | 5/10       |
+| [Preservation](./16_Preservation/README.md)         | DelegateCall                                | 8/10       |
+| [Recovery](./17_Recovery/README.md)                 | Contract address creation                   | 6/10       |
+| [Magic Number](./18_MagicNumber/README.md)          | Contract init and runtime opcodes           | 6/10       |
+| [Alien Codex](./19_AlienCodex/README.md)            | Writing to any storage slot using overflows | 7/10       |
+| [Denial](./20_Denial/README.md)                     | Ddos gas draining attack                    | 5/10       |
+| [Shop](./21_Shop/README.md)                         | Malicious view function interfaces          | 4/10       |
+| [Dex](./22_Dex/README.md)                           | Manipulating oracle-less price data         | 3/10       |
+| [Dex Two](./23_DexTwo/README.md)                    | Creating a malicious ERC20 token            | 4/10       |
+| [Puzzle Wallet](./24_PuzzleWallet/README.md)        | Proxy design patterns                       | 7/10       |
+| [Motorbike](./25_Moterbike/README.md)               | Upgradable pattern and EIP-1967             | 6/10       |
+| [DoubleEntryPoint](./26_DoubleEntryPoint/README.md) | Fortra contracts                            | 4/10       |
