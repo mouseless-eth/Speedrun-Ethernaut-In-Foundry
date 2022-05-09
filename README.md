@@ -1,4 +1,4 @@
-[#](#) Speedrun Ethernaut With Foundry :shipit:
+## Speedrun Ethernaut With Foundry :shipit:
 
 OpenZeppelin's wargame, [Ethernaut](https://ethernaut.openzeppelin.com/) teaches practical smart contract security concepts through CTF like challenges. 
 
@@ -57,9 +57,9 @@ Level Name link leads to solution write up.
 | [DoubleEntryPoint](./26_DoubleEntryPoint/README.md) | Fortra contracts                            | 4/10       |
 
 ### Contribution
-All contribution is welcome, if you find any mistakes or have a better implementation feel free to create a pull request.
+All contribution is welcome, if you find any mistakes or have a better implementation feel free to **create a pull request**.
 
 Levels without writeups : 
-- 24 Puzzle Wallet
-- 25 Moterbike
-- 26 Double Entry Point
+- `24 Puzzle Wallet`
+- `25 Moterbike`
+- `26 Double Entry Point`
