@@ -127,7 +127,7 @@ revise_index = 2^256 - codex_memory_address
 
 to quickly calculate **revise_index**, open remix and run the following contract
 
-```
+```solidity
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity 0.4.8;
 
