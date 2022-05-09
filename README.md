@@ -1,4 +1,4 @@
-## Speedrun Ethernaut With Foundry :shipit:
+# Speedrun Ethernaut With Foundry :shipit:
 
 OpenZeppelin's wargame, [Ethernaut](https://ethernaut.openzeppelin.com/) teaches practical smart contract security concepts through CTF like challenges. 
 
