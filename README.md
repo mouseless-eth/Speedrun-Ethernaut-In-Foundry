@@ -62,7 +62,7 @@ Level Name link leads to solution write up.
 --- 
  
 ### Contribution
-All contribution is welcome, if you find any mistakes or have a better implementation feel free to **create a pull request**.
+All contributions are welcome, if you find any mistakes or have a better implementation feel free to **create a pull request**.
 
 Levels without writeups : 
 - `24 Puzzle Wallet`
