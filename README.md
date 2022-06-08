@@ -8,6 +8,9 @@ This repo contains walkthroughs and solutions to each level using only [Foundry]
 - **`Forge`** a cli tool for testing, building, and deploying smart contracts
  
 - **`Cast`** a swiss army knife for interacting with Ethereum RPC nodes
+
+
+##### Walkthrough is hosted [here](https://mouseless-eth.gitbook.io/speed-running-ethernaut-with-foundry/)
  
 ## How To Use This Repo
 ### Config & Setup
