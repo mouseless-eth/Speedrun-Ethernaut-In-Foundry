@@ -107,23 +107,15 @@ this means our `init opcodes` will look like
 
 combinding our `init opcodes` and `runtime opcodes` yields :
 
-```
-0x600a600c600039600a6000f3602A60425260206042f3    
+```console
+0x600a600c600039600a6000f3602A60425260206042f3
 ```
  
 #### Part Three : Deploying Contract
 
-##### 1. Let's create the contract from your browser console on Ethernaut - no idea how to do this step in foundry :( 
-
-open your browser console and exectute the following
-
+##### 1. Let's create the contract
 ```console
-web3.eth.defaultAccount = web3.eth.accounts[0];
-var tx = {
-  from: <your-eoa-address-here>,
-  data : "0x600a600d600039600a6000f300602a60805260206080f3"
-}
-web3.eth.sendTransaction(tx, (err,res)=>{console.log(err,res);});
+cast send --private-key $PRIVATE_KEY --create 0x600a600c600039600a6000f3602A60425260206042f3
 ```
 
 ##### 2. Let's submit our new contract instance to the level
